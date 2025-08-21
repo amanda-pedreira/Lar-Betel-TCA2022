@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/936b50e383.js"></script>
+  <link rel="stylesheet" href="slide.css">
+  <title>Carrosel</title>
+  <style>
+    body{
+  background-image: url(http://localhost/02.12/tca-23.11/paginas/projetos/Carosel/imagens/Odontol%C3%B3gico/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+    }
+  </style>
+</head>
+
+<body >
+  <div class="div-total">
+  <a href="../projetos.html #serv4"><img src="../../../imagens/close.png" alt="" style="width: 30px; position: fixed; right: 2%; top: 2%;"></a>
+  <div class="slide">
+  <div class="slide">
+    <div class="item-slide">
+      <div id="voltar" class="btn">
+        <img src="imagens/seta-esquerda.png" alt="" style="width: 17%; padding-right: 95%;">
+      </div>
+      <div id="avancar" class="btn">
+        <img src="imagens/seta-direita.png" alt="" style="width: 17%; padding-left: 95%;">
+      </div>
+
+      <div id="atual" class="images">
+        <img src="imagens/Odontológico/1.jpg" alt="" srcset="">
+      </div>
+      <div class="images">
+        <img src="imagens/Odontológico/2.jpg" alt="" srcset="">
+      </div>
+      <div class="images">
+        <img src="imagens/Odontológico/3.jpg" alt="" srcset="">
+      </div>
+      <div class="images">
+        <img src="imagens/Odontológico/4.jpg" alt="" srcset="">
+      </div>
+      <div class="images">
+        <img src="imagens/Odontológico/5.jpg" alt="" srcset="">
+      </div>
+      <div class="images">
+        <img src="imagens/Odontológico/6.jpg" alt="" srcset="">
+      </div>
+    </div>
+    <div class="position">
+    </div>
+  </div>
+  </div>
+</body>
+<script>
+  var position = document.querySelector('.position')
+  var quant = document.querySelectorAll('.item-slide .images')
+  var atual = 0
+  var imagem = document.getElementById('atual')
+  var avancar = document.getElementById('avancar')
+  var voltar = document.getElementById('voltar')
+  var rolar = true
+
+  for (let i = 0; i < quant.length; i++) {
+    var div = document.createElement('div')
+    div.id = i
+    position.appendChild(div)
+  }
+  document.getElementById('0').classList.add('primeira')
+
+  var pos = document.querySelectorAll('.position div')
+
+  for (let i = 0; i < pos.length; i++) {
+    pos[i].addEventListener('click', () => {
+      atual = pos[i].id
+      rolar = false
+      slide()
+    })
+  }
+
+  voltar.addEventListener('click', () => {
+    atual--
+    rolar = false
+    slide()
+  })
+
+  avancar.addEventListener('click', () => {
+    atual++
+    rolar = false
+    slide()
+  })
+
+  function slide() {
+    if (atual >= quant.length) {
+      atual = 0;
+    } else if (atual < 0) {
+      atual = quant.length - 1
+    }
+
+    document.querySelector('.primeira').classList.remove('primeira')
+    imagem.style.marginLeft = -1024 * atual +'px'
+    document.getElementById(atual).classList.add('primeira')
+
+  }
+
+  setInterval(()=>{
+    if(rolar){
+      atual++
+      slide()
+    }else{
+      rolar = true
+    }
+  },5000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+//   var position = document.querySelector('.position1')
+//   var quant = document.querySelectorAll('.item-slide1 .images1')
+//   var atual = 0
+//   var imagem = document.getElementById('atual1')
+//   var avancar = document.getElementById('avancar1')
+//   var voltar = document.getElementById('voltar1')
+//   var rolar = true
+
+//   for (let i = 0; i < quant.length; i++) {
+//     var div = document.createElement('div')
+//     div.id = i
+//     position.appendChild(div)
+//   }
+//   document.getElementById('0').classList.add('primeira1')
+
+//   var pos = document.querySelectorAll('.position1 div')
+
+//   for (let i = 0; i < pos.length; i++) {
+//     pos[i].addEventListener('click', () => {
+//       atual = pos[i].id
+//       rolar = false
+//       slide()
+//     })
+//   }
+
+//   voltar.addEventListener('click', () => {
+//     atual--
+//     rolar = false
+//     slide()
+//   })
+
+//   avancar.addEventListener('click', () => {
+//     atual++
+//     rolar = false
+//     slide()
+//   })
+
+//   function slide() {
+//     if (atual >= quant.length) {
+//       atual = 0;
+//     } else if (atual < 0) {
+//       atual = quant.length - 1
+//     }
+
+//     document.querySelector('.primeira1').classList.remove('primeira')
+//     imagem.style.marginLeft = -1024 * atual +'px'
+//     document.getElementById(atual).classList.add('primeira')
+
+//   }
+
+//   setInterval(()=>{
+//     if(rolar){
+//       atual++
+//       slide()
+//     }else{
+//       rolar = true
+//     }
+//   },5000)
+
+// </script>
+
+</html>
