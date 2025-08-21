@@ -1,0 +1,588 @@
+
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .banner {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+  }
+  
+  .banner h1 {
+    color:rgb(38, 69, 128);
+    font-size: 6.5rem;
+    font-family: var(--font-primary);
+    font-weight: 200;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
+  }
+  
+  .banner p {
+    font-family: var(--font-secundary);
+    color: rgb(55, 53, 53);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+  }
+  
+  .banner a {
+    font-family: var(--font-action);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background: linear-gradient(to left, rgb(16, 61, 87), #2f598f);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.9s forwards;
+  }
+
+
+  .banner a:hover {
+    font-family: var(--font-action);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background: #b9b9b9;
+    background: linear-gradient(to left, #2f598f, rgb(16, 61, 87));
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.9s forwards;
+  }
+  
+  @keyframes moveBanner {
+    0% {
+      transform: translateY(10rem) rotateY(-30deg);
+    }
+    100% {
+      transform: translateY(0) rotateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  .banner2 p {
+    font-family: var(--font-secundary);
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+  }
+
+  /*
+ .img-wrapper {
+  width: 1190px;
+  height: 800px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+}  */
+
+
+/* --------------- COMEÇO DIV BEM VINDO -----------------------*/
+.bemVindo{
+  width: 100%;
+  height: 65vh;
+}
+
+.bemVindo p{
+  color: rgb(4, 23, 57);
+  font-size: 30px;
+  text-align: center;
+  margin-left: 18%;
+  margin-right: 18%;
+  margin-top: 5%;
+}
+
+
+
+.link{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#a2{
+  padding: 1% 4% 1% 4%;
+  border: rgb(38, 69, 128) 1px solid;
+  background-color: rgb(38, 69, 128);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+#a2:hover{
+  padding: 1% 4% 1% 4%;
+  border: rgb(38, 69, 128) 1px solid;
+  background-color: rgb(57, 91, 153);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+  
+ 
+/* --------------FIM DIV BEM VINDO-------------------*/
+
+/* --------------- COMEÇO DIV SOBRE NOS -----------------------*/
+.sobreNos{
+  width: 100%;
+  height: 90vh;
+  background-image: url(https://images.pexels.com/photos/34761/old-people-couple-together-connected.jpg?auto=compress&cs=tinysrgb&w=1600);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.sobreNos .cor{
+  backdrop-filter: blur(15px);
+  background-color: rgba(49, 92, 148, 0.741);
+  backdrop-filter: blur(5px);
+  height: 90vh;
+  width: 100%;
+}
+
+.sobreTudo{
+  height: 90vh;
+  width: 100%;
+}
+
+.sobreTudo h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  color: rgba(255, 255, 255, 0.833);
+  text-align: center;
+}
+
+.sobreTudo p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  letter-spacing: 3px;
+}
+
+
+.linkSobre{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.sobreTudo a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 1% 3% 1% 3%;
+  background: linear-gradient(to left, #4c6174, #1c325d);
+}
+
+.sobreTudo a:hover{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 0.2rem 0.2rem rgb(0 0 0 / 40%);
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 1% 3% 1% 3%;
+  background: linear-gradient(to left,  #1c325d, #4c6174);
+}
+
+ 
+/* --------------FIM DIV SOBRE NOS-------------------*/
+
+/* --------------- COMEÇO DIV SERVIÇOS -----------------------*/
+.servicos{
+  width: 100%;
+  height: 60vh;
+}
+
+#servUm, #servDois, #servTres, #servQuatro{
+  width: 25%;
+  height: 50vh;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+
+#icon1{
+  width: 60%;
+  height: 30vh;
+  margin-right: -75%;
+  background: linear-gradient(to left, rgb(160 208 235), #2f598f);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#icon1:hover{
+  width: 60%;
+  height: 30vh;
+  margin-right: -75%;
+  background-image: url(https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#icon2{
+  width: 60%;
+  height: 30vh;
+  margin-left: 25%;
+  background: linear-gradient(to left, rgb(160 208 235), #2f598f);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%; 
+}
+
+#icon2:hover{
+  width: 60%;
+  height: 30vh;
+  margin-left: 25%;
+  background-image: url(https://media.istockphoto.com/id/1079107724/pt/foto/patient-at-the-physiotherapy-doing-physical-exercises-with-his-therapist.jpg?b=1&s=612x612&w=0&k=20&c=3hp9UxNr1EucPatX3OvWMeR8k_sucL5ZUfzKAzcWPi8=);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#icon3{
+  width: 60%;
+  height: 30vh;
+  margin-right: 25%;
+  background: linear-gradient(to left, rgb(160 208 235), #2f598f);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#icon3:hover{
+  width: 60%;
+  height: 30vh;
+  margin-right: 25%;
+  background-image: url(https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#icon4{
+  width: 60%;
+  height: 30vh;
+  background: linear-gradient(to left, rgb(160 208 235), #2f598f);
+    backdrop-filter: blur(5px);
+  margin-left: -75%;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  border-radius: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#icon4:hover{
+  width: 60%;
+  height: 30vh;
+  background-image: url(https://images.pexels.com/photos/7722927/pexels-photo-7722927.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: -75%;
+}
+
+.servicos h1{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: -2%;
+}
+
+.servicos a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.servicos h2{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: -2%;
+  color:  #2f598f;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.servicos img{
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 8%;
+  margin-top: 7%;
+}
+
+
+
+
+
+  
+ 
+/* --------------FIM DIV SERVIÇOS-------------------*/
+
+/* --------------- COMEÇO DIV COLABORE -----------------------*/
+.colabore{
+  width: 100%;
+  height: 45vh;
+  background-image: url(http://www.residencialvitalita.com.br/wp-content/uploads/2017/11/01-A-CASA-RESIDENCIAL-VITALITA-1.jpg);
+  background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  
+  .conteudoTotal{
+  background-color: rgba(49, 92, 148, 0.504);
+  backdrop-filter: blur(15px);
+  height: 100%;
+  width: 100%;
+  }
+  
+  #left{
+  width: 50%;
+  height: 40vh;
+  float: left;
+  }
+  
+  #left h1{
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  margin-left: 18%;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #left p{
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 18%;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  #right{
+  width: 50%;
+  height: 40vh;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  }  
+  
+  #a3{
+  padding: 2% 7% 2% 7%;
+  border: rgb(255, 255, 255) 2px solid;
+  background: linear-gradient(to left, #5f6683, #233458);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  }
+
+  #a3:hover{
+    padding: 2% 7% 2% 7%;
+    border: rgb(255, 255, 255) 2px solid;
+    background: linear-gradient(to left, #233458, #5f6683);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    }
+  
+  /* --------------FIM DIV COLABORE-------------------*/
+
+/* --------------- COMEÇO DIV CONTATO -----------------------*/
+
+.contato{
+  width: 100%;
+  height: 110vh;
+  background-color: #d9d2d23d;
+  text-align: center;
+}
+
+#h1Contato{
+  text-align: center;
+  color: rgb(49, 92, 148);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  }
+
+#pContato{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 30px;
+}
+
+#ladoUm{
+  width: 33%;
+  height: 45vh;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 5%;
+}
+
+#ladoDois{
+  width: 33%;
+  height: 45vh;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 5%;
+}
+
+#ladoTres{
+  width: 33%;
+  height: 45vh;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#card1{
+  width: 50%;
+  height: 45vh;
+  border: rgb(49, 92, 148) 5px;
+  border-style: none none solid none;
+  margin-left: 45%;
+  background-color: #fff;
+}
+ 
+
+#card2{
+  width: 50%;
+  height: 45vh;
+  border: rgb(49, 92, 148) 5px;
+  border-style: none none solid none;
+  background-color: #fff;
+}
+
+#card2 h1, #card3 h1, #card1 h1{
+  color: rgb(49, 92, 148);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#card2 p, #card1 p, #card3 p{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 18px;
+}
+
+
+
+#a4, #a5, #a6{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(49, 92, 148);
+}
+ 
+
+#card3{
+  width: 50%;
+  height: 45vh;
+  border: rgb(49, 92, 148) 5px;
+  border-style: none none solid none;
+  margin-right: 45%;
+  background-color: #fff;
+  
+}
+
+.centralizadora{
+  height: 33%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+ 
+/* --------------FIM DIV CONTATO-------------------*/
+  
+
+  
+
+#img6 {
+  height: 100vh;
+  background-image: url('./img/background.jpg');
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#img6 > img {
+  width: 60px;
+  margin-bottom: 62%;
+  animation: jumping 1s linear infinite;
+  cursor: pointer;
+  color: #000;
+}
+
+@keyframes jumping {
+  from {transform: translateY(-15px);}
+  50% {transform: translateY(0);}
+  to {transform: translateY(-15px);}
+}
