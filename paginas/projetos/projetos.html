@@ -1,0 +1,308 @@
+
+
+<!--TODOS AS ESTILIZAÇÕES DO HEADER, FOOTER E DO BATE PAPO, assim como o java script deles, ESTÃO NO SEGUINTE CAMINHO: dentro da pasta "css", então dentro de "paraTodos", e em "sript.js" e "style.css"-->
+<!--fora essas estilizações, qualquer uma está dentro da pasta css e arquivo css com mesmo nome do arquivo html (ex: em contatos esta: pasta css, contatos, contatos.css)-->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/paraTodos/style.css" />
+    <link rel="stylesheet" href="../../css/projetos/projetos.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="../../imagens/android-icon-192x192.png" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Lar Betel</title>
+  </head>
+  <body>
+    <div class="container" id="conteudo">
+    <div class="header" id="headerr">
+
+        <div class="header-1">
+          <a href="../colabore/colabore.html" class="doar">Doar</a>
+        </div>
+
+          <div class="header-2">
+          <a href="../../index.html"><img src="../../imagens/logo (2).png" alt="" class="header-img"></a>
+        </div>
+      
+        <div class="header-3">
+        <div class="hamburguer">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+          
+        </div> 
+        <aside class="sidebar">
+          <nav>
+            <ul class="menu">
+              <li class="menu-item"><a href="../../index.html" class="menu-link">Inicio</a></li>
+              <br>
+              <li class="menu-item" onmouseover="abrirDiv()" onmouseout="abrirDiv()"><a href="../institucional/institucional.html" class="menu-link">Institucional</a>
+                <div id="testeDiv">
+                  <ul>
+                    <a href="../institucional/sobre.html" class="menu-link2"><li>Sobre Nós</li></a>
+                    <a href="../institucional/fichas.html" class="menu-link2"><li>Equipe e Diretoria</li></a>
+                    <a href="../institucional/servicos.html" class="menu-link2"><li>Serviços</li></a>
+                  </ul>
+                </div>
+              </li>
+              <br>
+              <li class="menu-item"><a href="../projetos/projetos.html" class="menu-link">Projetos</a></li>
+              <br>
+              <li class="menu-item"><a href="../colabore/colabore.html" class="menu-link">Colabore</a></li>
+              <br>
+              <li class="menu-item"><a href="../contatos/contatos.html" class="menu-link">Contato</a></li>
+            </ul>
+          </nav>    
+        </aside>
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        </div>
+        </div>div>
+      </div>
+
+      <DIV  id="fale" onclick="abrirFale()"><a href="#fale2"><img src="../../imagens/bater-papo.png" alt="" style="width: 20px; margin-right: 3%; margin-bottom: -5%;">Bate-Papo</a></DIV>
+      <div id="fale2">
+        <div id="papo1">
+          <img src="../../imagens/logo.png" alt="">
+        </div>
+        <div id="papo2">
+          <h1>Converse com o Lar Betel - </h1>
+          <p>Olá! Como podemos te ajudar?</p>
+        </div>
+        
+        <div id="papo3"></div>
+
+        <div id="papo4">
+          <a href="https://www.facebook.com/messages/t/571127359574297" target="_blank">Iniciar bate-papo</a><p> 
+          <img src="../../imagens/messenger.png" alt="" style="width: 15px; margin-right: 2%;">Com tecnologia do Messenger</p>
+        </div>
+      </div>
+
+      
+      <div class="div-sobrediv">
+        <div class="sobrediv50" id="sobre">
+          <div class="cor"></div>
+          <h1>Projetos</h1>
+        </div>
+
+        <!--COMEÇO DIV TOTAL-->
+          <div class="total">
+            <div class="textos">
+              <h1>ATIVIDADES COM O LAR BETEL</h1>
+              <p class="p1">Fazemos da nossa residência um lugar feliz!</p>
+              <P class="p2">Visita à Shoppings, ida ao teatro, piqueniques no parque. Aqui no Lar Betel, realizamos atividades externas para que nosos residentes aproveitem a o ar livre ao máximo.</P>
+              <p class="p2">Promovemos eventos temáticos, como jantares, festa em familias e muito mais.</p>
+              <p class="p3">Promovemos atividades em grupo para a saúde e bem-estar do idoso.</p>
+              <a href="#h1-centro" class="a1"><h2>Algumas atividades realizadas<h3>_________</h3></h2></a>
+            </div>
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-d4vSrxA2yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        <!--FIM DIV TOTAL-->
+
+
+          <div class="tudo">
+            <div id="espaco"></div>
+        <!--COMEÇO PRIMEIRA DIV SERVICOS (class)-->
+        <h1 class="h1-centro" id="h1-centro">ATIVIDADES REALIZADAS</h1>
+
+            <div class="servicos">
+              <div class="card" id="card1">
+                <a href="Carosel/caroselUm.html"><div class="quadrante1" id="quad1">
+                  <div class="iiimg"><img src="../../imagens/projetos2/Barra Bonita/1.jpg" alt="" srcset=""></div>
+                  <h3>Passeio em Barra Bonita</h3>
+                </div></a>
+              </div>
+
+
+
+              <div class="card" id="card2">
+                <a href="Carosel/caroselDois.html"><div class="quadrante1" id="quad2">
+                  <div class="iiimg"><img src="../../imagens/projetos2/Coral/1.jpg" alt="" srcset=""></div>
+                  <h3>Apresentação do Coral</h3>
+                </div></a>
+              </div>
+
+
+
+              <div class="card" id="card1">
+                <a href="Carosel/caroselTres.html"><div class="quadrante1" id="quad3">
+                  <div class="iiimg"><img src="../../imagens/projetos2//Praia/1.jpg" alt="" srcset=""></div>
+                  <h3>Praia Grande</h3>
+                </div></a>
+              </div>
+
+         </div>
+         <!--FIM PRIMEIRA DIV SERVICOS (class)-->
+
+
+ <!--COMEÇO SEGUNDA DIV SERVICOS (class)-->
+ <div class="servicos" id="serv2">
+
+  <div class="card" id="card1">
+    <a href="Carosel/caroselQuatro.html"><div class="quadrante1" id="quad4">
+      <div class="iiimg"><img src="../../imagens/projetos2/Piquenique/1.jpg" alt="" srcset=""></div>
+      <h3>Piquenique na Rua do Porto</h3>
+    </div></a>
+  </div>
+
+
+
+  
+  <div class="card" id="card1">
+    <a href="Carosel/caroselCinco.html"><div class="quadrante1" id="quad5">
+      <div class="iiimg"><img src="../../imagens/projetos2/Teatro/1.jfif" alt="" srcset=""></div>
+      <h3>Teatro Municipal Dr. Losso Neto</h3>
+    </div></a>
+  </div>
+
+
+
+
+
+  <div class="card" id="card1">
+    <a href="Carosel/caroselSeis.html"><div class="quadrante1" id="quad6">
+      <div class="iiimg"><img src="../../imagens/projetos2/Zoo/1.jpg" alt="" srcset=""></div>
+      <h3>Zoológico</h3>
+    </div></a>
+  </div>
+
+
+
+
+</div>
+<!--FIM SEGUNDA DIV SERVICOS (class)-->
+
+
+<!--COMEÇO TERCEIRA DIV SERVICOS (class)-->
+<div class="servicos" id="serv3">
+
+<div class="card" id="card1">
+  <a href="Carosel/caroselSete.html"><div class="quadrante1" id="quad7">
+    <div class="iiimg"><img src="../../imagens/projetos2/Sesc/1.jpg" alt="" srcset=""></div>
+    <h3>Sesc - Bienal Naifs do Brasil</h3>
+  </div></a>
+</div>
+
+<div class="card" id="card1">
+  <a href="Carosel/caroselOito.html"><div class="quadrante1" id="quad8">
+    <div class="iiimg"><img src="../../imagens/projetos2/Shopping Piracicaba/1.jpg" alt=""></div>
+    <h3>Shopping Piracicaba</h3>
+  </div></a>
+</div>
+
+<div class="card" id="card1">
+  <a href="Carosel/caroselNove.html"><div class="quadrante1" id="quad9">
+    <div class="iiimg"><img src="../../imagens/projetos2/Caminhada/1.jpg" alt="" srcset=""></div>
+    <h3 id="isolado">Caminha entre gerações</h3>
+  </div></a>
+</div>
+
+</div>
+<!--FIM TERCEIRA DIV SERVICOS (class)-->
+
+
+<!--COMEÇO QUARTA DIV SERVICOS (class)-->
+<div class="servicos" id="serv4">
+
+<div class="card" id="card1">
+  <a href="Carosel/caroselDez.html"><div class="quadrante1" id="quad10">
+    <div class="iiimg"><img src="../../imagens/projetos2/Odontológico/1.jpg" alt="" srcset=""></div>
+    <h3>Trailer Odontológico Sorriso Solidário </h3>
+  </div></a>
+</div>
+
+
+<div class="card" id="card1">
+  <a href="Carosel/caroselOnze.html"><div class="quadrante1" id="quad11">
+    <div class="iiimg"><img src="../../imagens/projetos2/Trenzinho/1.jpg" alt="" srcset=""></div>
+    <h3>Passeio de Trenzinho</h3>
+  </div></a>
+</div>
+
+
+<div class="card" id="card1">
+  <a href="Carosel/caroselDoze.html"><div class="quadrante1" id="quad12">
+    <div class="iiimg"><img src="../../imagens/projetos2/Oficina Gastronomica/1.jpg" alt="" srcset=""></div>
+    <h3>Oficina Gastronomica</h3>
+  </div></a>
+</div>
+
+</div>
+<!--FIM QUARTA DIV SERVICOS (class)-->
+</div>
+
+
+
+  
+   
+    <!--------NÃO MEXER-------->
+    <footer>
+      <div class="boxs">
+        <img src="../../imagens/logo1.png" alt="">
+      </div>
+      
+      <div class="boxs">
+        <h2 class="boxs2">Saiba mais</h2>
+        <ul>
+          <li><a href="../institucional/sobre.html"  id="boxs22">Sobre nós</a></li>
+          <li><a href="../institucional/servicos.html"  id="boxs22">Serviços</a></li>
+          <li><a href="../colabore/colabore.html"  id="boxs22">Colabore</a></li>
+          <!-- <a href="../colabore/colabore.html" class="doar2">DOAR</a> -->
+        </ul>
+      </div>
+
+      <div class="boxs">
+        <h2 class="boxs1">Contatos</h2>
+        <ul>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <li id="boxs11">Rua Santos Dumont, 377 <br> Piracicaba - SP<</a></li>
+        </ul>
+        <ul>
+          <li id="boxs11">(19) 3418-2020</a></li>
+          <li id="boxs11">contato@larbetel.org.br</a></li>
+          <li id="boxs11">Seg à Dom - 11h às 18h</a></li>
+          
+        </ul>
+        
+        <div class="sociais">
+          <div class="social">
+            <a href="https://www.instagram.com/larbetelpira/?fbclid=IwAR1U3f6YUrQvIbbxp6GnQoFRDgFRMLGQmvoGRJb3iZLFVg_bj7k1Q1kL-Y0" target="_blank"><img src="../../imagens/instagram.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/larbetelpiracicaba/" target="_blank"><img src="../../imagens/facebook.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://twitter.com/larbetelpira/with_replies" target="_blank"><img src="../../imagens/twitter.png" alt="" style="width: 30px;"></a>
+          </div>
+      </div>
+
+         
+   </footer>
+
+ <div class="footer">
+    <a href="../adm/Ctrl/login.php" style="margin-top: 0.6%" target="_blank"><p>Copyright ©1953– 2022</p></a>
+   </div> 
+<!--------NÃO MEXER/ FIM FOOTER-------->
+
+
+
+
+<script src="../../css/projetos/script.js"></script>
+<script src="../../css/paraTodos/script.js"></script>
+</html>
