@@ -1,0 +1,288 @@
+
+
+<!--TODOS AS ESTILIZAÇÕES DO HEADER, FOOTER E DO BATE PAPO, assim como o java script deles, ESTÃO NO SEGUINTE CAMINHO: dentro da pasta "css", então dentro de "paraTodos", e em "sript.js" e "style.css"-->
+<!--fora essas estilizações, qualquer uma está dentro da pasta css e arquivo css com mesmo nome do arquivo html (ex: em contatos esta: pasta css, contatos, contatos.css)-->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/paraTodos/style.css" />
+    <link rel="stylesheet" href="../../css/institucional/fichas.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="../../imagens/android-icon-192x192.png" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Lar Betel</title>
+  </head>
+  <body>
+    <!-------------------COMEÇO DO HEADER------------------------->
+    <div class="container" id="conteudo">
+
+      <div class="header" id="headerr">
+
+        <div class="header-1">
+          <a href="../colabore/colabore.html" class="doar">Doar</a>
+        </div>
+
+          <div class="header-2">
+          <a href="../../index.html"><img src="../../imagens/logo (2).png" alt="" class="header-img"></a>
+        </div>
+      
+        <div class="header-3">
+        <div class="hamburguer">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+          
+        </div> 
+        <aside class="sidebar">
+          <nav>
+            <ul class="menu">
+              <li class="menu-item"><a href="../../index.html" class="menu-link">Inicio</a></li>
+              <br>
+              <li class="menu-item" onmouseover="abrirDiv()" onmouseout="abrirDiv()"><a href="../institucional/institucional.html" class="menu-link">Institucional</a>
+                <div id="testeDiv">
+                  <ul>
+                    <a href="../institucional/sobre.html" class="menu-link2"><li>Sobre Nós</li></a>
+                    <a href="../institucional/fichas.html" class="menu-link2"><li>Equipe e Diretoria</li></a>
+                    <a href="../institucional/servicos.html" class="menu-link2"><li>Serviços</li></a>
+                  </ul>
+                </div>
+              </li>
+              <br>
+              <li class="menu-item"><a href="../projetos/projetos.html" class="menu-link">Projetos</a></li>
+              <br>
+              <li class="menu-item"><a href="../colabore/colabore.html" class="menu-link">Colabore</a></li>
+              <br>
+              <li class="menu-item"><a href="../contatos/contatos.html" class="menu-link">Contato</a></li>
+            </ul>
+          </nav>    
+        </aside>
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        </div>
+        </div>div>
+      </div>
+    <!-------------------FIM DO HEADER------------------------->
+
+      <!-------------------COMEÇO DO BATE-PAPO------------------------->
+      <DIV  id="fale" onclick="abrirFale()"><a href="#fale2"><img src="../../imagens/bater-papo.png" alt="" style="width: 20px; margin-right: 3%; margin-bottom: -5%;">Bate-Papo</a></DIV>
+      <div id="fale2">
+        <div id="papo1">
+          <img src="../../imagens/logo.png" alt="">
+        </div>
+        <div id="papo2">
+          <h1>Converse com o Lar Betel - </h1>
+          <p>Olá! Como podemos te ajudar?</p>
+        </div>
+        
+        <div id="papo3"></div>
+
+        <div id="papo4">
+          <a href="https://www.facebook.com/messages/t/571127359574297" target="_blank">Iniciar bate-papo</a><p> 
+          <img src="../../imagens/messenger.png" alt="" style="width: 15px; margin-right: 2%;">Com tecnologia do Messenger</p>
+        </div>
+      </div>
+      <!-------------------FIM DO BATE-PAPO------------------------->
+
+      <!-------------------COMEÇO DO CONTEUDO começo "div-sobrediv"------------------------->
+      <div class="div-sobrediv">
+
+    <!-------------------COMEÇO DO HEADER-TITULO------------------------->
+        <div class="sobrediv50" id="sobre">
+          <div class="cor"></div>
+          <h1>Diretoria e Equipe Técnica</h1>
+        </div>
+    <!-------------------FIM DO HEADER-TITULO------------------------->
+
+
+
+
+
+
+    
+
+    <!-------------------COMEÇO DA DIV SERVIÇOS------------------------->
+          <div class="servicos">
+              <div id="diretoria1">
+                <div id="esq">
+                  <img src="../../imagens/bgtrp.png " class="wave2">
+                  <img src="../../imagens/team-animate.svg" class="imgEsquerda" >
+                 
+                  </div>
+                  <div id="dir">
+                    <div id="lista">
+                      <h3>Diretoria</h3><br>
+                      <ol>
+                         <li> <span class="bold">Presidente:</span> Dr. Luiz Adalberto dos Santos</li><br>
+                         <li> <span class="bold">Vice-Presidente:</span> Davi Ferreira Barros</li><br>
+                         <li><span class="bold">Segundo Vice-Presidente:</span> Adolpho Beissmann</li><br>
+                        <li><span class="bold">Primeiro Tesoureiro:</span> Carlos Barbosa </li><br>
+                         <li><span class="bold">Segundo Tesoureiro:</span> João Antonio de Camargo</li><br>
+                         <li><span class="bold">Primeiro Secretário:</span> Sebastião Mário de Souza</li><br>
+                         <li><span class="bold">Segundo Secretário:</span> Juscelino Rodrigues Monção Neto</li><br>
+                         <li><span class="bold">Membro Titular do Conselho Fiscal: </span>Angela Aparecida de Lima Toledo</li><br>
+                         <li><li> <span class="bold">Membro Titular do Conselho Fiscal:</span> Valmir José Santana </li><br>
+                         <li><li> <span class="bold">Membro Titular do Conselho Fiscal:</span>  Aécio Miranda</li><br>
+                         <li><li> <span class="bold">Membro Suplente do Conselho Fiscal:</span> Vera Lígia Lavoura de Carvalho</li><br>
+                          <li><li> <span class="bold">Membro Suplente do Conselho Fiscal: </span>Celia Regina Sanches Miranda </li><br>
+                         </span><li> <span class="bold">Membro Suplente do Conselho Fiscal:</span> Marisa Claudino Trevisan</li><br>
+                      </ol><br><br>
+                      
+                <DIV id="vai1" onclick="abrirEquipe()"><a href="#equipe" class="a">Equipe</a></DIV>
+                    </div>
+                  
+                  </div>
+              </div>
+              <div id="diretoria2">
+                <div id="esq">
+                  <img src="../../imagens/bgtrp.png " class="wave2">
+                  <img src="../../imagens/team-animate.svg" class="imgEsquerda" >
+                  </div>
+                  <div id="dir">
+                    <div id="lista">
+                      <h3>Diretoria</h3><br>
+                       <ol>
+                        <li>Presidente: Dr. Luiz Adalberto dos Santos</li><br>
+                        <li>Vice-Presidente: Davi Ferreira Barros</li><br>
+                        <li>Segundo Vice-Presidente: Adolpho Beissmann</li><br>
+                        <li>Primeiro Tesoureiro: Carlos Barbosa </li><br>
+                        <li>Segundo Tesoureiro: João Antonio de Camargo</li><br>
+                        <li>Primeiro Secretário: Sebastião Mário de Souza</li><br>
+                        <li>Segundo Secretário: Juscelino Rodrigues Monção Neto</li><br>
+                        <li>Membro Titular do Conselho Fiscal: Angela Aparecida de Lima Toledo</li><br>
+                        <li>Membro Titular do Conselho Fiscal: Valmir José Santana </li><br>
+                        <li>Membro Titular do Conselho Fiscal:  Aécio Miranda</li><br>
+                        <li>Membro Suplente do Conselho Fiscal: Vera Lígia Lavoura de Carvalho</li><br>
+                        <li>Membro Suplente do Conselho Fiscal: Celia Regina Sanches Miranda </li><br>
+                        <li>Membro Suplente do Conselho Fiscal: Marisa Claudino Trevisan</li><br>
+                      </ol><br><br>
+
+                      <center>
+
+                      
+                <DIV id="vai1" onclick="abrirEquipe()">
+
+                  <a href="#equipe" class="a">Equipe</a>
+
+                </DIV>
+            
+                    </div>
+                  </div>
+              </div>
+
+              <div id="equipe">
+                <div id="esq">
+                  <img src="../../imagens/bgtrp.png " class="wave2">
+                  <img src="../../imagens/team-animate.svg" class="imgEsquerda" >
+                  </div>
+                  <div id="dir">
+                    <div id="lista">
+                      <h3>Equipe Técnica</h3><br>
+                       <ol>
+                        <li><span class="bold">Administradora:</span> Ivone Claudete Costa</li><br>
+                        <li><span class="bold">Médico voluntário:</span> Dorivaldo Custódio Barbosa</li><br>
+                        <li><span class="bold">Setor de Manutenção e Reparos:</span> Antonio Fernando Costa</li><br>
+                        <li><span class="bold">Controladoria e Finanças:</span> Eduardo Mota Henriques</li><br>
+                        <li><span class="bold">Assistente Social:</span>Kellen Cristina Sabbadin</li><br>
+                        <li><span class="bold">Psicóloga:</span> Sara Taranto Vechine</li><br>
+                        <li><span class="bold">Recreacionista: </span>Filipe Alexandre Medrano </li><br>
+                        <li><span class="bold">Nutricionista:</span>  Cristina Skrepnek Lima</li><br>
+                        <li><span class="bold"> Enfermeiro:</span> Claudio da Silva Oliveira </li><br>
+                        <li><span class="bold">Enfermeira:</span> Ariana Jesicka de Oliveira</li><br>
+                        <li><span class="bold">Setor de Higiene e Limpeza:</span> Maria Aparecida Medeiros da Silva</li><br>
+                        <li><span class="bold"></span>Fisioterapeuta:</span> Maria do Carmo Duarte Novaes </li><br>
+                        <li><span class="bold"></span>Gerente do Bazar: </span>Maria Helena Perencin da Silva</li><br>
+                      </ol><br><br>
+                <DIV id="vai1" onclick="abrirEquipe()"><a href="#equipe" class="a">Diretoria</a></DIV>
+                    </div>
+                  </div>
+              </div>
+    <!-------------------FIM DA DIV SERVIÇOS------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+      <!-------------------FIM DO CONTEUDO fim "div-sobrediv"------------------------->
+
+
+
+
+        
+    <!--------NÃO MEXER/ COMEÇO FOOTER-------->
+    <footer>
+      <div class="boxs">
+        <img src="../../imagens/logo1.png" alt="">
+      </div>
+      
+      <div class="boxs">
+        <h2 class="boxs2">Saiba mais</h2>
+        <ul>
+          <li><a href="sobre.html"  id="boxs22">Sobre nós</a></li>
+          <li><a href="servicos.html"  id="boxs22">Serviços</a></li>
+          <li><a href="../colabore/colabore.html"  id="boxs22">Colabore</a></li>
+          <!-- <a href="../colabore/colabore.html" class="doar2">DOAR</a> -->
+        </ul>
+      </div>
+
+      <div class="boxs">
+        <h2 class="boxs1">Contatos</h2>
+        <ul>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <li id="boxs11">Rua Santos Dumont, 377 <br> Piracicaba - SP</a></li>
+        </ul>
+        <ul>
+          <li id="boxs11">(19) 3418-2020</a></li>
+          <li id="boxs11">contato@larbetel.org.br</a></li>
+          <li id="boxs11">Seg à Dom - 11h às 18h</a></li>
+          
+        </ul>
+        
+        <div class="sociais">
+          <div class="social">
+            <a href="https://www.instagram.com/larbetelpira/?fbclid=IwAR1U3f6YUrQvIbbxp6GnQoFRDgFRMLGQmvoGRJb3iZLFVg_bj7k1Q1kL-Y0" target="_blank"><img src="../../imagens/instagram.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/larbetelpiracicaba/" target="_blank"><img src="../../imagens/facebook.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://twitter.com/larbetelpira/with_replies" target="_blank"><img src="../../imagens/twitter.png" alt="" style="width: 30px;"></a>
+          </div>
+      </div>
+   
+   </footer>
+
+   <div class="footer">
+    <a href="../adm/Ctrl/login.php" target="_blank"><p>Copyright ©1953 – 2022</p></a>
+   </div> 
+
+    <!--------NÃO MEXER/ FIM FOOTER-------->
+
+
+  
+      
+
+   <script src="../../css/paraTodos/script.js"></script>
+   <script src="../../css/institucional/script.js"></script>
+</html>
