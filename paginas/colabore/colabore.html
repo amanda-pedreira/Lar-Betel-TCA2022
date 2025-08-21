@@ -1,0 +1,450 @@
+
+
+<!--TODOS AS ESTILIZAÇÕES DO HEADER, FOOTER E DO BATE PAPO, assim como o java script deles, ESTÃO NO SEGUINTE CAMINHO: dentro da pasta "css", então dentro de "paraTodos", e em "sript.js" e "style.css"-->
+<!--fora essas estilizações, qualquer uma está dentro da pasta css e arquivo css com mesmo nome do arquivo html (ex: em contatos esta: pasta css, contatos, contatos.css)-->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/paraTodos/style.css" />
+    <link rel="stylesheet" href="../../css/colabore/colabore.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="../../imagens/android-icon-192x192.png" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <title>Lar Betel</title>
+    <script>
+      function abrirDiv(){
+        var Aparecendo = document.getElementById("testeDiv").style.display;
+
+        if(Aparecendo == "block"){
+          document.getElementById("testeDiv").style.display ="none";
+        }else{
+          document.getElementById("testeDiv").style.display ="block";
+        }
+        
+      }
+
+      function abrirFale(){
+          var Aparecendo = document.getElementById("fale2").style.display;
+
+          if(Aparecendo == "block"){
+            document.getElementById("fale2").style.display ="none";
+          }else{
+            document.getElementById("fale2").style.display ="block";
+          }
+          
+        }
+
+      
+
+      function abrirDiv1(){
+          var Aparecendo = document.getElementById("testeDiv1").style.display;
+  
+          if(Aparecendo == "block"){
+            document.getElementById("testeDiv1").style.display ="none";
+            document.getElementById("testeDiv9").style.display ="none";
+            document.getElementById("testeDiv10").style.display ="none";
+          }else{
+            document.getElementById("testeDiv1").style.display ="block";
+            document.getElementById("testeDiv9").style.display ="block";
+            document.getElementById("testeDiv10").style.display ="block";
+            document.getElementById("testeDiv2").style.display ="none";
+          }
+          
+        }
+
+        function abrirDiv2(){
+          var Aparecendo = document.getElementById("testeDiv2").style.display;
+
+          if(Aparecendo == "block"){
+            document.getElementById("testeDiv2").style.display ="none";
+            document.getElementById("testeDiv9").style.display ="none";
+            document.getElementById("testeDiv10").style.display ="none";
+          }else{
+            document.getElementById("testeDiv2").style.display ="block";
+            document.getElementById("testeDiv1").style.display ="none";
+            document.getElementById("testeDiv10").style.display ="none";
+            document.getElementById("testeDiv9").style.display ="none";
+          }
+        }
+          
+       
+
+        
+
+      
+    </script>
+  </head>
+  <body>
+    <div class="container" id="conteudo">
+
+         
+        
+
+        <div class="header" id="headerr">
+
+          <div class="header-1">
+            <a href="../colabore/colabore.html" class="doar">Doar</a>
+          </div>
+  
+            <div class="header-2">
+            <a href="../../index.html"><img src="../../imagens/logo (2).png" alt="" class="header-img"></a>
+          </div>
+        
+          <div class="header-3">
+          <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            
+          </div> 
+          <aside class="sidebar">
+            <nav>
+              <ul class="menu">
+                <li class="menu-item"><a href="../../index.html" class="menu-link">Inicio</a></li><br>
+                <li class="menu-item" onmouseover="abrirDiv()" onmouseout="abrirDiv()"><a href="../institucional/institucional.html" class="menu-link">Institucional</a>
+                  <div id="testeDiv">
+                    <ul>
+                      <a href="../institucional/sobre.html" class="menu-link2"><li>Sobre Nós</li></a>
+                      <a href="../institucional/fichas.html" class="menu-link2"><li>Equipe e Diretoria</li></a>
+                      <a href="../institucional/servicos.html" class="menu-link2"><li>Serviços</li></a>
+                    </ul>
+                  </div>
+                </li><br>
+                <li class="menu-item"><a href="../projetos/projetos.html" class="menu-link">Projetos</a></li>
+                <br>
+                <li class="menu-item"><a href="colabore.html" class="menu-link">Colabore</a></li>
+                <br>
+                <li class="menu-item"><a href="../contatos/contatos.html" class="menu-link">Contato</a></li>
+              </ul>
+            </nav>    
+          </aside>
+          <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+          </div>
+          
+         
+
+        </div>
+
+
+
+
+
+
+
+
+        <DIV  id="fale" onclick="abrirFale()"><a href="#fale2"><img src="../../imagens/bater-papo.png" alt="" style="width: 20px; margin-right: 3%; margin-bottom: -5%;">Bate-Papo</a></DIV>
+        <div id="fale2">
+          <div id="papo1">
+            <img src="../../imagens/logo.png" alt="">
+          </div>
+          <div id="papo2">
+            <h1>Converse com o Lar Betel - </h1>
+            <p>Olá! Como podemos te ajudar?</p>
+          </div>
+          
+          <div id="papo3"></div>
+  
+          <div id="papo4">
+            <a href="https://www.facebook.com/messages/t/571127359574297" target="_blank">Iniciar bate-papo</a><p> 
+            <img src="../../imagens/messenger.png" alt="" style="width: 15px; margin-right: 2%;">Com tecnologia do Messenger</p>
+          </div>
+        </div>
+
+        <div class="div-sobrediv">
+
+        <div class="sobrediv60" id="sobre">
+          <div class="cor"></div>
+          <div id="tudo">
+          <div class="div-mao"><img class="mao" src="../../imagens/combinado.png" alt=""></div>
+          <div class="div-col"><h1>COLABORE</h1></div>
+          <div class="sobrediv60-1" id="sobre">
+            <div class="ancora1"><a href="#testeDiv1" onclick="abrirDiv1()" class="colabore">Voluntário</a></div>
+            <div class="ancora2"><a href="#testeDiv2" onclick="abrirDiv2()" class="colabore">Doação</a></div>
+          </div>
+          </div>  
+        </div>
+
+
+       
+        
+      
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div id="testeDiv1">
+        <div id="left">
+          <h1>Voluntário</h1>
+          <p>Responsabilizar-se por um trabalho voluntário, por um trabalho solidário espontâneo e livremente assumido é - além de um gesto de amor - demonstração de maturidade.<br>Ser responsável no cumprimento dos compromissos assumidos exige, entre outros:</p><br>
+          <a href="#seja"> <h2>Seja Voluntário<h3>______</h3></h2></a>
+        </div>
+        <div id="right"><img src="../../imagens/atos/col1.jpeg" alt="" id="img1">
+          <img src="../../imagens/atos/col3.jpeg" alt="" id="img2"></div>
+      </div>
+
+     
+     <div id="testeDiv9">
+      <div id="h1Um"><h1></h1></div>
+      <div id="h1Dois"><h1>Missões de um Voluntário</h1></div>
+
+
+      <div class="volunter">
+        <div id="dez">
+        </div>
+        
+
+      <div class="div-total">
+      <div class="div1">
+        <img src="../../imagens/numero-1.png" alt=""><br>
+        <p>Escolher cuidadosamente onde quer fazer o trabalho voluntário, conforme seus interesses, objetivos e habilidades, para um trabalho eficiente.</p>
+      
+      </div>
+    </div>
+      <div class="div-total">
+      <div class="div2">
+        <img src="../../imagens/numero-2.png" alt=""><br>
+        <p>Conhecer a instituição e/ou a comunidade onde presta serviços e tarefas que lhe forem atribuídas.</p>
+      </div>
+    </div>
+    <div class="div-total">
+      <div class="div3">
+        <img src="../../imagens/numero-3.png" alt=""><br>
+        <p>Trabalhar de maneira integrada com a entidade onde presta serviço, assistência.</p>
+      </div>
+    </div>
+      <div class="div-total">
+      <div class="div4">
+        <img src="../../imagens/numero-4.png" alt=""><br>
+        <p>Respeitar as diretrizes da instituição, esforçando-se para alcançar seus objetivos.</p>
+      </div>
+      </div>
+
+      <div id="dez">
+      </div>
+    </div>
+
+
+
+
+<div id="todosVolunters">
+    <div class="volunter"><br><br>
+      <div id="dez">
+      </div>
+
+      <div class="div-total">
+      <div class="div5">
+        <img src="../../imagens/numero-5.png" alt=""><br>
+        <p>Planejar, executar e avaliar as ações junto à equipe.</p>
+       
+      </div>
+    </div>
+      <div class="div-total">
+      <div class="div6">
+        <img src="../../imagens/numero-6.png" alt=""><br>
+        <p>Respeitar valores, crenças e diferenças religiosas, políticas, raciais, sociais, físicas, psicológicas das pessoas com quem trabalha.</p>
+      </div>
+    </div>
+     
+      <div class="div-total">
+        <div class="div7">
+          <img src="../../imagens/numero-7.png" alt=""><br>
+          <p>Responsabilizar-se com o trabalho voluntário assumindo livremente.</p>
+        </div>
+      </div>
+      <div class="div-total">
+        <div class="div8">
+          <img src="../../imagens/numero-8.png" alt=""><br>
+          <p>Procurar, sempre, ser exemplo de responsabilidade, respeito cooperação e dedicação entre todos os participantes do projeto, procurando manter sempre um bom relacionamento na equipe.</p>
+        </div>
+      </div>
+      <div id="dez">
+      </div>
+  </div>
+  
+  <div class="volunter"><br><br>
+    <div id="dez">
+    </div>
+    
+      <div class="div-total">
+        <div class="div9">
+          <img src="../../imagens/numero-9.png" alt=""><br>
+          <p>Ser pontual e assíduo na responsabilidade livremente assumida.</p>
+        </div>
+      </div>
+      <div class="div-total">
+        <div class="div10">
+          <img src="../../imagens/numero-10.png" alt=""><br>
+          <p>Usar de bom senso para resolver imprevistos, informando-os aos responsáveis.</p>
+        </div>
+      </div>
+      <div class="div-total">
+        <div class="div11">
+          <img src="../../imagens/numero-11.png" alt=""><br>
+          <p>Comunicar à instituição o seu desligamento, temporário ou definitivo, caso seja seu desejo ou necessidade.</p>
+        </div>
+      </div>
+      <div class="div-total">
+        <div class="div12">
+          <img src="../../imagens/numero-12.png" alt=""><br>
+          <p>Manter assuntos confidenciais em absoluto sigilo.</p>
+        </div>
+      </div>
+      <div id="dez">
+      </div>
+      </div>
+    </div>
+
+      <div id="seja">
+        <div id="left2">
+          <img src="../../imagens/atos/col2.jpeg" alt="" id="img3">
+          <img src="../../imagens/atos/col4.jpeg" alt="" id="img4">
+        </div>
+        <div id="right2">
+          <h1>Seja um voluntário</h1>
+          <h2>Faça parte da nossa familia.</h2>
+          <p>Para ser um voluntário na nossa residência, envie suas informações: nome, telefone e fale um pouco sobre você.<br>Assim que possivel, entraremos em contato</p><br><br>
+          <a href="mailto:contato@larbetel.org.br?subject=Seja Voluntário&&body=Envio este email por interesse em ser voluntario (a) no Lar Betel." target="_blank"> Envie suas informações </a>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+       
+      <div id="testeDiv10">
+      </div>
+
+      
+
+      <div class="sobrediv3" id="testeDiv2">
+        <div id="textos">
+        <br><br><h1>Doação</h1><br>
+        <p>Amigos, para aqueles que desejam contribuir conosco financeiramente seguem nossas contas para depósito ou transferência:</p>
+      </div>
+        <div class="doLeft">
+          <h1>Faça sua doação</h1>
+          <p id="p1">A sua doação contribui para o mantimento do nosso lar que oferece diversas atividades e oportunidades para a pessoa idosa. </p>
+          <p id="p2"><span class="card" style="color: rgb(27, 71, 118);">Razão Social:</span> Associação de Assistência Social Betel CNPJ: 54.408.935/0001-30</p>
+          <p id="p3">Caso você queira ajudar de outra formas, nós postamos sobre alimentos ou itens que estamos precisando na nossa página do Facebook.</p><br><br>
+          <a href="https://www.facebook.com/larbetelpiracicaba/" target="_blank" id="face">Visite nossa página</a>
+        </div>
+        <div class="doRight">
+          <div class="card-total1">
+          <div class="card1">
+            <img src="../../imagens/caixa.png" alt="">
+            <h1>Caixa Econômica <br>Federal:</h1>
+            <p>008 Conta Corrente Pessoa Jurídica: 1060-6</p>
+          </div>
+          <div class="card2">
+            <img src="../../imagens/santander.png" alt="">
+            <h1>Santander <br>Agência:</h1>
+            <p> 0041 Conta Corrente Pessoa Jurídica: 13009036-9
+            </p>
+          </div>
+        </div>
+        <div class="card-total2">
+          <div class="card3">
+            <img src="../../imagens/brasil.png" alt="">
+            <h1>Banco do Brasil <br>Agência:</h1>
+            <p> 0056-6 Conta Corrente Pessoa Jurídica: 201648-6</p>
+          </div>
+          <div class="card4">
+            <img src="../../imagens/pix.png" alt="">
+            <h1>Chave <br>Pix:</h1>
+            <p>(CNPJ)54.408.935/0001-30</p>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+
+
+         
+         
+         
+      
+    <!--------NÃO MEXER-------->
+    <footer>
+      <div class="boxs">
+        <img src="../../imagens/logo1.png" alt="">
+      </div>
+      
+      <div class="boxs">
+        <h2 class="boxs2">Saiba mais</h2>
+        <ul>
+          <li><a href="../institucional/sobre.html"  id="boxs22">Sobre nós</a></li>
+          <li><a href="../institucional/servicos.html"  id="boxs22">Serviços</a></li>
+          <li><a href="../colabore/colabore.html"  id="boxs22">Colabore</a></li>
+          <!-- <a href="../colabore/colabore.html" class="doar2">DOAR</a> -->
+        </ul>
+      </div>
+
+      <div class="boxs">
+        <h2 class="boxs1">Contatos</h2>
+        <ul>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <li id="boxs11">Rua Santos Dumont, 377 <br> Piracicaba - SP</a></li>
+        </ul>
+        <ul>
+          <li id="boxs11">(19) 3418-2020</a></li>
+          <li id="boxs11">contato@larbetel.org.br</a></li>
+          <li id="boxs11">Seg à Dom - 11h às 18h</a></li>
+          
+        </ul>
+        
+        <div class="sociais">
+          <div class="social">
+            <a href="https://www.instagram.com/larbetelpira/?fbclid=IwAR1U3f6YUrQvIbbxp6GnQoFRDgFRMLGQmvoGRJb3iZLFVg_bj7k1Q1kL-Y0" target="_blank"><img src="../../imagens/instagram.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/larbetelpiracicaba/" target="_blank"><img src="../../imagens/facebook.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://twitter.com/larbetelpira/with_replies" target="_blank"><img src="../../imagens/twitter.png" alt="" style="width: 30px;"></a>
+          </div>
+      </div>
+
+         
+   </footer>
+
+ <div class="footer">
+    <a href="../adm/Ctrl/login.php" style="margin-top: 0.6%" target="_blank"><p>Copyright ©1953– 2022</p></a>
+   </div> 
+
+  
+      
+
+   <script src="../../css/paraTodos/script.js"></script>
+</html>
