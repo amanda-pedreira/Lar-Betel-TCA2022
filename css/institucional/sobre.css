@@ -1,0 +1,411 @@
+*{
+  scroll-behavior: smooth;
+}
+
+.div-sobrediv{
+margin-top: 8%;
+}
+
+#conteudo{
+  overflow-x: hidden;
+}
+
+/* 
+
+#vai1, #vai2, #vai3{
+float: left;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+#vai1{
+width: 33%;
+}
+
+#vai2{
+width: 33%;
+}
+
+#vai3{
+width: 33%;
+}
+
+.a{
+position: relative;
+color: #fff;
+text-decoration: none;  
+} */
+
+.a{
+  position: absolute;
+  text-decoration: none;  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  } 
+
+.a:hover:before {
+visibility: visible;
+-webkit-transform: scaleX(1);
+transform: scaleX(1);
+}
+
+.a:before {
+content: "";
+position: absolute;
+width: 100%;
+height: 5%;
+bottom: 0;
+left: 0;
+background-color: #abb6c9;
+visibility: hidden;
+-webkit-transform: scaleX(0);
+transform: scaleX(0);
+-webkit-transition: all 0.3s ease-in-out 0s;
+transition: all 0.3s ease-in-out 0s;
+}
+
+.a{
+display: block;
+color: #FFF;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.a:hover {
+color: #abb6c9;
+}
+
+#a1{
+  margin-left: -60%;
+  margin-top: 1%;
+}
+
+#a2{
+  margin-top: 1%;
+}
+
+#a3{
+  margin-right: -60%;
+  margin-top: 1%;
+}
+
+
+
+.sobrediv60{
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/34761/old-people-couple-together-connected.jpg?auto=compress&cs=tinysrgb&w=1600);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.sobrediv60 .cor{
+  backdrop-filter: blur(15px);
+  background-color: rgb(36 67 133 / 50%);
+  backdrop-filter: blur(15px);
+  height: 100%;
+  width: 100%;
+}
+
+.sobrediv60 h1{
+  margin-top: 8%;
+  position: absolute;
+  align-items: center;
+  font-family: Cooper;
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 200;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: moveBanner 1s 0.5s forwards;
+  font-family: var(--font-primary);
+}
+
+ 
+.sobrediv2{
+  height: 100vh;
+  width: 100%;
+  padding: 3% 0% 5% 0%;
+}
+
+.imagemlb{
+  width: 55%;
+  height: auto;
+  max-height: 60vh;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.textoSobre{
+  width: 45%;
+  height: 100vh;
+  float: left;
+}
+
+.textoSobre h1{
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1%;
+  margin-right: 5%;
+  text-align: justify;
+  margin-top: -1%;
+  color: rgb(47 89 143);
+}
+
+.textoSobre h2{
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1%;
+  margin-right: 5%;
+  margin-top: -2%;
+  margin-bottom: 3%;
+  text-align: justify;
+  color: rgb(47 89 143);
+}
+
+.textoSobre p.um{
+  font-weight: bold;
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 12%;
+  text-align: justify;
+}
+
+.textoSobre p.dois{
+  font-size: 18px;
+  text-align: justify;
+  margin-right: 12%;
+}
+
+.textoSobre p.tres{
+  font-size: 18px;
+  margin-right: 12%;
+  text-align: justify;
+}
+
+
+.imagemlb img.lbimage{
+  width: 70%;
+  height: 100%;
+  box-shadow: 0px 5px 15px 0px #898888;
+}
+
+
+
+.sobrediv3{
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  margin-bottom: 100px;
+  margin-bottom: 10px;
+}
+
+.sobrediv3 p{
+  color: #000;
+  text-align: justify;
+  font-size: 18px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.criadora p{
+  color: #000;
+  text-align: justify;
+  font-size: 18px;
+  margin-left: 17%;
+}
+
+.criadora h3{
+  margin-left: 17%;
+}
+
+.umaimg{
+  height: 30vh;
+  width: 80%;
+  display: block; 
+    background-image: url(../../imagens/historia.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  box-shadow: 0px 5px 15px 0px #bebebee1;
+}
+
+.sobrediv3 h1{
+  color: rgb(47 89 143);
+  text-align: left;
+  font-size: 30px;
+  margin-right: 140px;
+  margin-left: 10%;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.sobrediv3 img{
+  margin-left: 100px;
+  box-shadow: 0px 5px 15px 0px #d0cfcf;;
+}
+
+.sobrediv3.tudo3{
+  width: 50%;
+}
+
+.sobrediv4{
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.cor{
+  color: rgb(47 89 143);
+  text-decoration: none;
+}
+
+
+.tudo3{
+  width: 100%;
+  height: 85vh;
+  /*margin-left: 50px;*/
+  /*background-color: #adc9e8;*/
+}
+
+#testeDiv1, #testeDiv2, #testeDiv3{
+  display: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
+.testCr{
+  width: 70%;
+  float: left;
+}
+
+.criadora{
+  background-color: #a1d1eb4d;
+  display: flex;
+  height: auto;
+  padding: 2% 0% 2% 0%;
+  width: 100%;
+}
+
+.criadora h3{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: rgb(47 89 143);
+  font-size: 30px;
+  margin-left: 17%;
+}
+
+#img-fund{
+  width: 30%;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: 10%;
+}
+
+@keyframes moveBanner {
+  0% {
+    transform: translateY(10rem) rotateY(-30deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+.div-total{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 90vh;
+  background-color: #a1d1eb4d;
+  margin-top: 5%;
+
+}
+
+#titulo{
+  width: 40%;
+  height: 10vh;
+  margin-left: 20%;
+  margin-right: 30%;
+  background-color: rgb(47 89 143);
+  position: absolute;
+  margin-top: -2.8%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo1{
+  width: 100%;
+  height: 40vh;
+}
+
+.conteudo2{
+  width: 100%;
+  height: 40vh;
+}
+
+#cont1, #cont2, #cont3{
+  width: 33%;
+  height: 40vh;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 3%;
+}
+
+#cont4, #cont5, #cont6{
+  width: 33%;
+  height: 40vh;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: -3%;
+}
+
+#card1, #card2, #card3, #card4, #card5, #card6{
+  width: 70%;
+    height: auto;
+}
+
+#card1 h1, #card2 h1, #card3 h1, #card4 h1, #card5 h1, #card6 h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: rgb(47 89 143);
+}
+
+#card1 p, #card2 p, #card3 p, #card4 p, #card5 p, #card6 p{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+
+#imgg{
+width: 30%;
+margin-left: 35%;
+}
