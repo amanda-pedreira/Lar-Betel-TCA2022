@@ -1,0 +1,241 @@
+  
+
+  @keyframes moveBanner {
+    0% {
+      transform: translateY(10rem) rotateY(-30deg);
+    }
+    100% {
+      transform: translateY(0) rotateY(0);
+      opacity: 1;
+    }
+  }
+
+/*---CONTEUDO---*/
+.div-sobrediv{
+  margin-top: 5%;
+}
+/*---CONTEUDO----*/
+
+
+
+
+
+
+/* --------------começo: DIV SERVIÇOS-------------------*/
+  .servicos{
+     width: 100%;
+     height: auto;
+     margin-bottom: 3.5%;
+  }
+/* --------------fim: DIV SERVIÇOS-------------------*/
+
+/* --------------começo: DO INICIO-------------------*/
+.textos{
+  width: 50%;
+  height: 80vh;
+  float: left;
+  margin-top: 5%;
+}
+
+.textos h1{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: 35%;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(47 89 143);
+}
+
+.textos h3{
+  margin-left: 35%;
+  margin-bottom: 2%;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .textos p{
+  margin-left: 35%;
+  margin-bottom: 2%;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .a1{
+  margin-left: 35%;
+  border: 1px solid black;
+  padding: 1.5% 2.5% 1.5% 2.5%;
+  color: #fff;
+  box-shadow: 1px 1px 2px rgb(28, 18, 108);
+  text-shadow: 1px 1px 2px rgb(164, 158, 209);
+  background-color: rgb(47 89 143);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+ }
+
+ .a1:hover{
+  margin-left: 35%;
+  border: 1px solid black;
+  padding: 1.5% 2.5% 1.5% 2.5%;
+  color: #fff;
+  box-shadow: 1px 1px 2px rgb(28, 18, 108);
+  text-shadow: 1px 1px 2px rgb(164, 158, 209);
+  background-color: rgb(75, 121, 182);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+ }
+
+
+.imagem{
+  width: 50%;
+  height: 80vh;
+  margin-top: 5%;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.imagem img{
+  width: 65%;
+  margin-right: 25%;
+}
+/* --------------fim: DO INICIO-------------------*/
+
+  
+
+
+
+
+
+/* --------------começo: DOS CARDS-------------------*/
+
+
+
+  #card1, #card2, #card3{
+      margin-bottom: 5%;
+      width: 33%;
+      cursor: pointer;
+      float: left;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+  } 
+
+  .iiimg{
+    height: 25vh;
+    width: 100%;
+
+  }
+    .card img{
+    width: 100%;
+    height: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .quadrante1{
+    margin-top: 10%;
+    width: 60%;
+    height: 60vh;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  #none{
+    height: 4vh;
+  }
+
+  #quad1{
+    margin-right: -50%;
+  }
+
+  #quad3{
+    margin-left: -50%;
+  }
+  
+  #resumo{
+    text-align: justify;
+    margin-left: 9%;
+    margin-right: 9%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 3%;
+  }
+
+  .resto{
+    width: 100%;
+    height: 45vh;
+  }
+
+  #veja{
+    text-align: center;
+    width: 100%;
+    height: 15vh;
+  }
+
+  #veja a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(47 89 143);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #tracinho{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(47 89 143);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .quadrante1 h3{
+    margin-top: 8%;
+    margin-bottom: 3%;
+    text-align: left;
+    margin-left: 9%;
+    margin-right: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(47 89 143);
+  }
+
+
+  .quadrante1:hover{
+    margin-top: 7%;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .quadrante1:hover img{
+    height: 96%;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(5);
+    transform: scale(1.1);
+    transition: 500ms linear;
+  }
+
+  .quadrante1:hover h3{
+    margin-top: 8%;
+    margin-bottom: 3%;
+    text-align: left;
+    margin-left: 9%;
+    margin-right: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #055abb;
+  }
+
+
+/* --------------FIM: DOS CARDS-------------------*/
+  
+
+  
