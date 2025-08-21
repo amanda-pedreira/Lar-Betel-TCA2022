@@ -1,0 +1,264 @@
+
+
+<!--TODOS AS ESTILIZAÇÕES DO HEADER, FOOTER E DO BATE PAPO, assim como o java script deles, ESTÃO NO SEGUINTE CAMINHO: dentro da pasta "css", então dentro de "paraTodos", e em "sript.js" e "style.css"-->
+<!--fora essas estilizações, qualquer uma está dentro da pasta css e arquivo css com mesmo nome do arquivo html (ex: em contatos esta: pasta css, contatos, contatos.css)-->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+ 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/paraTodos/style.css" />
+    <link rel="stylesheet" href="../../css/contato/contato.css"/>
+    <link rel="icon" type="image/x-icon" href="/tca-21.11/imagens/android-icon-144x144.png">
+    <link rel="shortcut icon" href="../../imagens/android-icon-192x192.png" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Lar Betel</title>
+  </head>
+  <body>
+    <!-------------------COMEÇO DO HEADER------------------------->
+    <div class="container" id="conteudo">
+
+      <div class="header" id="headerr">
+
+        <div class="header-1">
+          <a href="../colabore/colabore.html" class="doar">Doar</a>
+        </div>
+
+          <div class="header-2">
+          <a href="../../index.html"><img src="../../imagens/logo (2).png" alt="" class="header-img"></a>
+        </div>
+      
+        <div class="header-3">
+        <div class="hamburguer">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+          
+        </div> 
+        <aside class="sidebar">
+          <nav>
+            <ul class="menu">
+              <li class="menu-item"><a href="../../index.html" class="menu-link">Inicio</a></li><br>
+              <li class="menu-item" onmouseover="abrirDiv()" onmouseout="abrirDiv()"><a href="../institucional/institucional.html" class="menu-link">Institucional</a>
+                <div id="testeDiv">
+                  <ul>
+                    <a href="../institucional/sobre.html" class="menu-link2"><li>Sobre Nós</li></a>
+                    <a href="../institucional/fichas.html" class="menu-link2"><li>Equipe e Diretoria</li></a>
+                    <a href="../institucional/servicos.html" class="menu-link2"><li>Serviços</li></a>
+                  </ul>
+                </div>
+              </li><br>
+              <li class="menu-item"><a href="../projetos/projetos.html" class="menu-link">Projetos</a></li><br>
+              <li class="menu-item"><a href="../colabore/colabore.html" class="menu-link">Colabore</a></li><br>
+              <li class="menu-item"><a href="../contatos/contatos.html" class="menu-link">Contato</a></li>
+            </ul>
+          </nav>    
+        </aside>
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        </div>
+        </div>div>
+      </div>
+    <!-------------------FIM DO HEADER------------------------->
+
+
+    <!-------------------COMEÇO DO BATE-PAPO------------------------->
+    <DIV  id="fale" onclick="abrirFale()"><a href="#fale2"><img src="../../imagens/bater-papo.png" alt="" style="width: 20px; margin-right: 3%; margin-bottom: -5%;">Bate-Papo</a></DIV>
+    <div id="fale2">
+      <div id="papo1">
+        <img src="../../imagens/logo.png" alt="">
+      </div>
+      <div id="papo2">
+        <h1>Converse com o Lar Betel - </h1>
+        <p>Olá! Como podemos te ajudar?</p>
+      </div>
+      
+      <div id="papo3"></div>
+
+      <div id="papo4">
+        <a href="https://www.facebook.com/messages/t/571127359574297" target="_blank">Iniciar bate-papo</a><p> 
+        <img src="../../imagens/messenger.png" alt="" style="width: 15px; margin-right: 2%;">Com tecnologia do Messenger</p>
+      </div>
+    </div>
+    <!-------------------FIM DO BATE-PAPO------------------------->
+
+
+
+       <!----começo div q pega tudo-->
+      <div class="div-sobrediv">
+
+
+        
+        <div class="sobrediv50" id="sobre">
+          <div class="cor"></div>
+          <h1>Contato</h1>
+        </div>
+
+
+      
+
+
+
+            <!----começo div "mapbox"-->
+            <div class="mapbox">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.2340634115358!2d-47.63054704893112!3d-22.719539985034327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c631b9018e63df%3A0x2ce7489a2d030952!2sBazar%20do%20Lar%20Betel!5e0!3m2!1spt-BR!2sbr!4v1669032688232!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+           <!----fim div "mapbox"-->
+
+
+
+
+
+<!----começo div q tem o conteudo-->
+<div class="servicos">
+
+
+
+
+    <div class="textos">
+      <h1>TRABALHE CONOSCO</h1>
+      <h3>Faça parte da Família Lar Betel</h3>
+      <P>Para trabalhar conosco, envie suas informações: nome, telefone e curriculo.<br>Assim que possivel, entraremos em contato</P>
+      <a href="" class="a1">Envie suas informações</a>
+    </div>
+
+
+
+
+
+            
+        <!------------------COMEÇO DIV "FORM" E FORMULARIO------------------>
+              
+        <div class="form">
+
+         
+
+                <form action="../adm/Ctrl/contatosC.php" method="POST">
+                  <h2 class="title">Fale Conosco </h2>
+                  
+                  
+                  
+                    <label> Nome: </label> <br>
+                    <div class="input">
+                    <input type="text" name="nome" autocomplete="off" placeholder="Insira seu Nome"> <br><br>
+                  </div>
+                    
+                 
+
+                    <label> E-mail: </label> <br>
+                    <div class="input">
+                    <input type="email" name="email" autocomplete="off" placeholder="Insira seu E-mail"> <br><br>
+                  </div>
+                    
+                 
+                    <label> Telefone: </label> <br>
+                    <div class="input"> 
+                    <input type="text" name="tele" autocomplete="off" placeholder="Insira seu Telefone"> <br><br>
+                  </div>
+                    
+                    <label> Assunto: </label> <br>
+                    <div class="inputselect"> 
+                    <select name="assunto" id="">
+                      <option value="rec"> Reclamação </option>
+                      <option value="sug"> Sugestão </option>
+                      <option value="elo" selected> Elogio </option>
+                      <option value="duv"> Dúvida </option> 
+                      </select>
+                      </div>
+
+                  
+
+
+                    </select>
+                  
+                  <label> Mensagem: </label> <br>
+                  <div class="inputmens"> 
+                  <textarea name="mens" cols="30" rows="10" spellcheck="true" placeholder="Digite sua Mensagem" maxlength="1000" ></textarea> <br><br>
+                  <!-- NÃO MEXE NESSE TEXTAREA, SE MEXER VAI LEVAR CASCUDO, FILHO DA PUTA(E SERIO, N MEXE, SE MEXER VAI CAGAR TUDO) -->
+                  </div>
+                  
+                <div id="btn">
+
+                  <button type="submit" value="enviar"> Enviar </button>
+                </div>
+              </div>
+        <!------------------FIM DIV "FORM" E FORMULARIO------------------>
+
+  
+              
+
+        
+  </div>
+  <!----fim div q tem o conteudo--> 
+  </div>
+  <!----fim div q pega tudo-->
+
+
+        
+        <!--------NÃO MEXER / começo do footer-------->
+    <footer>
+      <div class="boxs">
+        <img src="../../imagens/logo1.png" alt="">
+      </div>
+      
+      <div class="boxs">
+        <h2 class="boxs2">Saiba mais</h2>
+        <ul>
+          <li><a href="../institucional/sobre.html"  id="boxs22">Sobre nós</a></li>
+          <li><a href="../institucional/servicos.html"  id="boxs22">Serviços</a></li>
+          <li><a href="../colabore/colabore.html"  id="boxs22">Colabore</a></li>
+          <!-- <a href="../colabore/colabore.html" class="doar2">DOAR</a> -->
+        </ul>
+      </div>
+
+      <div class="boxs">
+        <h2 class="boxs1">Contatos</h2>
+        <ul>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <li id="boxs11">Rua Santos Dumont, 377 <br> Piracicaba - SP</a></li>
+        </ul>
+        <ul>
+          <li id="boxs11">(19) 3418-2020</a></li>
+          <li id="boxs11">contato@larbetel.org.br</a></li>
+          <li id="boxs11">Seg à Dom - 11h às 18h</a></li>
+          
+        </ul>
+        
+        <div class="sociais">
+          <div class="social">
+            <a href="https://www.instagram.com/larbetelpira/?fbclid=IwAR1U3f6YUrQvIbbxp6GnQoFRDgFRMLGQmvoGRJb3iZLFVg_bj7k1Q1kL-Y0" target="_blank"><img src="../../imagens/instagram.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/larbetelpiracicaba/" target="_blank"><img src="../../imagens/facebook.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://twitter.com/larbetelpira/with_replies" target="_blank"><img src="../../imagens/twitter.png" alt="" style="width: 30px;"></i></a>
+          </div>
+      </div>
+   
+   </footer>
+
+   <div class="footer">
+    <a href="../adm/Ctrl/login.php" target="_blank"><p>Copyright ©1953– 2022</p></a>
+    
+   </div> 
+    <!--------NÃO MEXER / fim do footer-------->
+
+  
+      
+
+   <script src="../../css/paraTodos/script.js"></script>
+</html>
