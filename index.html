@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/paraTodos/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="imagens/android-icon-192x192.png" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">    
+    <title>Lar Betel</title>
+    <script>
+      function abrirDiv(){
+        var Aparecendo = document.getElementById("testeDiv").style.display;
+
+        if(Aparecendo == "block"){
+          document.getElementById("testeDiv").style.display ="none";
+        }else{
+          document.getElementById("testeDiv").style.display ="block";
+        }
+        
+      }
+
+      function abrirDiv1(){
+        var Aparecendo1 = document.getElementById("testeDiv1").style.display;
+
+        if(Aparecendo1 == "block"){
+          document.getElementById("testeDiv1").style.display ="none";
+        }else{
+          document.getElementById("testeDiv1").style.display ="block";
+        }
+        
+      }
+
+      function abrirFale(){
+          var Aparecendo = document.getElementById("fale2").style.display;
+
+          if(Aparecendo == "block"){
+            document.getElementById("fale2").style.display ="none";
+          }else{
+            document.getElementById("fale2").style.display ="block";
+          }
+          
+        }
+    </script>
+  </head>
+  <body>
+    
+
+
+    <div class="container">
+
+        <div class="hamburguer">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+          
+        </div>  
+
+          <!-------------------COMEÇO DO BATE-PAPO------------------------->
+    <DIV  id="fale" onclick="abrirFale()"><a href="#fale2"><img src="imagens/bater-papo.png" alt="" style="width: 20px; margin-right: 3%; margin-bottom: -5%;">Bate-Papo</a></DIV>
+    <div id="fale2">
+      <div id="papo1">
+        <img src="imagens/logo.png" alt="">
+      </div>
+      <div id="papo2">
+        <h1>Converse com o Lar Betel - </h1>
+        <p>Olá! Como podemos te ajudar?</p>
+      </div>
+      
+      <div id="papo3"></div>
+
+      <div id="papo4">
+        <a href="https://www.facebook.com/messages/t/571127359574297" target="_blank">Iniciar bate-papo</a><p> 
+        <img src="imagens/messenger.png" alt="" style="width: 15px; margin-right: 2%;">Com tecnologia do Messenger</p>
+      </div>
+    </div>
+    <!-------------------FIM DO BATE-PAPO------------------------->
+
+
+
+        
+
+        <header id="home">
+            <div class="img-wrapper">
+                <video src="imagens/video2.mp4" height="1300%" width="2000px" controls autoplay loop ></video>
+            </div>
+           
+</a>
+
+<div id="img6">
+  <img id="botao" src="paginas/down-arrow.svg" >
+</div>
+
+
+           
+
+            <div class="banner">
+                <h1>Lar Betel</h1><br><br>
+                <p>O lar do seu idoso</p><br><br>
+               <a href="paginas/institucional/institucional.html">Saiba mais</a>
+            </div>
+        </header>
+
+        
+
+        <aside class="sidebar">
+          <nav>
+            <ul class="menu">
+              <li class="menu-item"><a href="index.html" class="menu-link">Inicio</a></li>
+              <br>
+              <li class="menu-item" onmouseover="abrirDiv()" onmouseout="abrirDiv()"><a href="paginas/institucional/institucional.html" class="menu-link">Institucional</a>
+                <div id="testeDiv">
+                  <ul>
+                    <a href="paginas/institucional/sobre.html" class="menu-link2"><li>Sobre Nós</li></a>
+                    <a href="paginas/institucional/fichas.html" class="menu-link2"><li>Equipe e Diretoria</li></a>
+                    <a href="paginas/institucional/servicos.html" class="menu-link2"><li>Serviços</li></a>
+                  </ul>
+                </div>
+              </li>
+              <br>
+              <li class="menu-item"><a href="paginas/projetos/projetos.html" class="menu-link">Projetos</a></li>
+              <br>
+              <li class="menu-item" onmouseover="abrirDiv1()" onmouseout="abrirDiv1()"><a href="paginas/colabore/colabore.html" class="menu-link">Colabore</a>
+              </li>
+              <br>
+              <li class="menu-item"><a href="paginas/contatos/contatos.html" class="menu-link">Contato</a></li>
+            </ul>
+          </nav>    
+        </aside>
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+
+
+        <!-------------------COMEÇO DIV BEM VINDO------------------------->
+        <div class="bemVindo">
+          <p>Bem vindo ao Lar Betel, uma associação de assitência <br>aos idosos.<br><br>Encontre informações sobre nós, nossos serviços, <br>e entre em contato conosco.</p><br><br><br>
+          <div class="link"><a href="paginas/projetos/projetos.html" id="a2">Veja Alguns de Nossos Projetos</a></div>
+        </div>
+          <!-------------------FIM DIV BEM VINDO------------------------->
+
+          <!-------------------COMEÇO DIV SOBRE NOS------------------------->
+        <div class="sobreNos">
+          <div class="cor">
+            <div class="sobreTudo"><br><br><br><br>
+              <h1>O Lar Betel</h1><br><br>
+              <p>Atualmente, a Associação de Assistência Social Betel – “Lar Betel” é uma entidade sem fins econômicos, que atende atualmente cerca de 90 idosos residentes. A Instituição tem como finalidade auxiliar pessoas idosas reconhecidamente necessitadas, a partir dos 60 anos, sem distinção de cor, raça ou crença religiosa, amparando-as moralmente em regime integral.</p><br><br><br>
+              <div class="linkSobre"><a href="paginas/projetos/projetos.html">Conheça o Lar Betel</a>
+            </div>
+          </div>
+          
+        </div>
+        </div>
+          <!-------------------FIM DIV SOBRE NOS------------------------->
+
+          <!-------------------COMEÇO DIV SERVIÇOS------------------------->
+          <div class="servicos">
+            <h2>Nossos Serviços</h2>
+            <div id="servUm">
+              <div id="icon1">
+                <img src="imagens/medico.png" alt="">
+                <h1>Médicos <br> Especialistas</h1>
+              </div>
+            </div>
+            <div id="servDois">
+              <div id="icon2">
+                <img src="imagens/fisioterapeuta.png" alt="">
+                <h1>Profissionais<br> Fisioterapeutas</h1>
+              </div>
+            </div>
+            <div id="servTres">
+              <div id="icon3">
+                <img src="imagens/enfermagem.png" alt="">
+                <h1>Enfermagem <br> 24h</h1>
+              </div>
+            </div>
+            <div id="servQuatro">
+              <div id="icon4">
+                <a href="paginas/institucional/servicos.html"><img src="imagens/mais.png" alt=""></a>
+                <a href="paginas/institucional/servicos.html"><h1>Mais <br>Serviços</h1></a>
+              </div>
+            </div>
+          </div>
+          <!-------------------FIM DIV SERVIÇOS------------------------->
+
+          <!-------------------COMEÇO DIV COLABORE------------------------->
+          <div class="colabore">
+            <div class="conteudoTotal">
+              <div id="left"><br><br>
+                <h1>Faça uma colaboração para o<br> Lar Betel</h1><br>
+                <p>Trabalhe conosco como voluntário, <br>ou faça uma doação.</p>
+              </div>
+              <div id="right">
+                <a href="paginas/colabore/colabore.html" id="a3">Colabore</a>
+              </div>
+            </div>
+          </div>
+          <!-------------------FIM DIV COLABORE------------------------->
+
+           <!-------------------COMEÇO DIV CONTATO------------------------->
+           <div class="contato">
+            <br><br><br><br><h1 id="h1Contato">Contato</h1>
+            <br><br><p id="pContato">Entre em contato conosco! Você pode nos enviar uma mensagem via email ou formulário.</p>
+           <div id="ladoUm">
+            <div id="card1">
+              <div class="centralizadora">
+                <h1>Trabalhe<br>Conosco</h1>
+              </div>
+              <div class="centralizadora">
+                <p>Para fazer parte da nossa equipe, envie seu nome, telefone e curriculo.</p>
+              </div>
+              <div class="centralizadora">
+                <a href="mailto:contato@larbetel.org.br?subject=Trabalhe Conosco&&body=Envio este email por interesse em trabalhar com o Lar Betel" id="a4">
+                  Envie suas Informações
+                </a>
+              </div>
+            </div>
+           </div>
+           <div id="ladoDois">
+            <div id="card2">
+              <div class="centralizadora">
+                <h1>Seja <br>Voluntario</h1>
+              </div>
+              <div class="centralizadora">
+                <p>Para ser um voluntário, envie seu nome, telefone e fale um pouco sobre você.
+                </p>
+              </div>
+              <div class="centralizadora">
+                <a href="mailto:contato@larbetel.org.br?subject=Seja Voluntário&&body=Envio este email por interesse em ser voluntario (a) no Lar Betel." id="a5">Envie suas Informações</a>
+              </div>
+            </div>
+           </div>
+           <div id="ladoTres">
+            <div id="card3">
+              <div class="centralizadora">
+                <h1>Fale <br>Conosco</h1>
+              </div>
+              <div class="centralizadora">
+                <p>Para fazer uma reclamação, elogio, sugestão e dúvida, preencha o formulário.
+                </p>
+              </div>
+              <div class="centralizadora">
+                <a href="paginas/contatos/contatos.html" id="a6">Formulario</a>
+              </div>
+            </div>
+           </div>
+           </div>
+           <!-------------------FIM DIV CONTATO------------------------->
+          
+  
+ 
+
+        
+    <!--------NÃO MEXER-------->
+    <footer>
+      <div class="boxs">
+        <img src="imagens/logo1.png" alt="">
+      </div>
+      
+      <div class="boxs">
+        <h2 class="boxs2">Saiba mais</h2>
+        <ul>
+          <li><a href="paginas/institucional/sobre.html"  id="boxs22">Sobre nós</a></li>
+          <li><a href="paginas/institucional/servicos.html"  id="boxs22">Serviços</a></li>
+          <li><a href="paginas/colabore/colabore.html"  id="boxs22">Colabore</a></li>
+          <!-- <a href="../colabore/colabore.html" class="doar2">DOAR</a> -->
+        </ul>
+      </div>
+
+      <div class="boxs">
+        <h2 class="boxs1">Contatos</h2>
+        <ul>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <li id="boxs11">Rua Santos Dumont, 377 <br> Piracicaba - SP</a></li>
+          <li id="boxs11">(19) 3418-2020</a></li>
+          <li id="boxs11">contato@larbetel.org.br</a></li>
+          <li id="boxs11">Seg à Dom - 11h às 18h</a></li>
+          
+        </ul>
+        
+        <div class="sociais">
+          <div class="social">
+            <a href="https://www.instagram.com/larbetelpira/?fbclid=IwAR1U3f6YUrQvIbbxp6GnQoFRDgFRMLGQmvoGRJb3iZLFVg_bj7k1Q1kL-Y0"><img src="imagens/instagram.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/larbetelpiracicaba/"><img src="imagens/facebook.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://twitter.com/larbetelpira/with_replies"><img src="imagens/twitter.png" alt="" style="width: 30px;"></a>
+          </div>
+      </div>
+
+      
+    </footer>
+
+    <div class="footer">
+     <a href="paginas/adm/Ctrl/login.php" style="margin-top: 0.6%" target="_blank"><p>Copyright ©1953– 2022</p></a>
+    </div> 
+  
+      
+    <script src="paginas/main.js"></script>
+   <script src="css/paraTodos/script.js"></script>
+</html>
