@@ -1,0 +1,109 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+/* body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(to left, #224571d6, #a1b1c4);
+  align-items: center;
+  justify-content: center;
+} */
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-total{
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  backdrop-filter: blur(15px);
+  background-color: rgba(152, 172, 214, 0.363);
+  backdrop-filter: blur(15px);
+}
+
+.slide{
+  width: 1024px;
+  height: 576px;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.4s;
+}
+
+.item-slide{
+  width: 5120px ;
+  display: flex;
+}
+
+.images img{
+  width: 1024px;
+  height: 576px;
+}
+
+#atual{
+  transition: all 2s;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 1.7em;
+  margin-top: -5px;
+}
+
+.btn:hover{
+  transform: scale(1.5);
+}
+
+#voltar{
+  top: 50%;
+  left: 10%;
+}
+
+#avancar{
+  top: 50%;
+  right: 10%;
+}
+
+.position{
+  display: flex;
+  justify-content: center;
+  margin-top: -45px;
+
+  position: absolute;
+  width: 1024px;
+}
+
+.position div{
+  transition: all 0.5s;
+  border: 3px solid #fff;
+  padding: 6px;
+  border-radius: 50%;
+  margin-right:15px ;
+  cursor: pointer;
+}
+
+.position div:hover{
+  background: #fff;
+}
+
+.primeira{
+  transition: all 0.5s;
+  background: #fff;
+}
