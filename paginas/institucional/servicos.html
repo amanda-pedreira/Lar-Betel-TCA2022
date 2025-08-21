@@ -1,0 +1,574 @@
+
+
+<!--TODOS AS ESTILIZAÇÕES DO HEADER, FOOTER E DO BATE PAPO, assim como o java script deles, ESTÃO NO SEGUINTE CAMINHO: dentro da pasta "css", então dentro de "paraTodos", e em "sript.js" e "style.css"-->
+<!--fora essas estilizações, qualquer uma está dentro da pasta css e arquivo css com mesmo nome do arquivo html (ex: em contatos esta: pasta css, contatos, contatos.css)-->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/paraTodos/style.css" />
+    <link rel="stylesheet" href="../../css/institucional/servicos.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="../../imagens/android-icon-192x192.png" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Lar Betel</title>
+    <script>
+      function abrirDiv(){
+        var Aparecendo = document.getElementById("testeDiv").style.display;
+
+        if(Aparecendo == "block"){
+          document.getElementById("testeDiv").style.display ="none";
+        }else{
+          document.getElementById("testeDiv").style.display ="block";
+        }
+        
+      }
+
+      function abrirFale(){
+          var Aparecendo = document.getElementById("fale2").style.display;
+
+          if(Aparecendo == "block"){
+            document.getElementById("fale2").style.display ="none";
+          }else{
+            document.getElementById("fale2").style.display ="block";
+          }
+          
+        }
+
+      
+
+        function abrirDiv1(){
+
+            document.getElementById('tituloServiço').innerHTML = 'Serviços';
+
+          var Aparecendo = document.getElementById("testeDiv1").style.display;
+  
+          if(Aparecendo == "block"){
+            document.getElementById("testeDiv1").style.display ="block";
+            document.getElementById("testeDiv4").style.display ="none";
+          }else{
+            document.getElementById("testeDiv1").style.display ="block";
+            document.getElementById("testeDiv2").style.display ="none";
+            document.getElementById("testeDiv4").style.display ="none";
+          }
+          
+        }
+
+        function abrirDiv2(id){
+
+            document.getElementById('tituloServiço').innerHTML = 'Covid-19';
+
+
+          var Aparecendo = document.getElementById("testeDiv2").style.display;
+
+          if(Aparecendo == "block"){
+            document.getElementById("testeDiv2").style.display ="none";
+            document.getElementById("testeDiv1").style.display ="block";
+            document.getElementById("testeDiv4").style.display ="none";
+          }else{
+            document.getElementById("testeDiv2").style.display ="block";
+            document.getElementById("testeDiv1").style.display ="none";
+            document.getElementById("testeDiv4").style.display ="none";
+          }
+          
+        }
+
+        function abrirDiv3(){
+          var Aparecendo = document.getElementById("testeDiv3").style.display;
+  
+          if(Aparecendo == "block"){
+            document.getElementById("testeDiv1").style.display ="block";
+            document.getElementById("testeDiv4").style.display ="none";
+          }else{
+            document.getElementById("testeDiv2").style.display ="none";
+            document.getElementById("testeDiv1").style.display ="none";
+            document.getElementById("testeDiv4").style.display ="none";
+          }
+
+          
+        }
+    </script>
+  </head>
+  <body>
+     <!-------------------COMEÇO DO HEADER------------------------->
+    <div class="container" id="conteudo">
+
+
+        <div class="header" id="headerr">
+  
+          <div class="header-1">
+            <a href="../colabore/colabore.html" class="doar">Doar</a>
+          </div>
+  
+            <div class="header-2">
+            <a href="../../index.html"><img src="../../imagens/logo (2).png" alt="" class="header-img"></a>
+          </div>
+        
+          <div class="header-3">
+          <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            
+          </div> 
+          <aside class="sidebar">
+            <nav>
+              <ul class="menu">
+                <li class="menu-item"><a href="../../index.html" class="menu-link">Inicio</a></li><br>
+                <li class="menu-item" onmouseover="abrirDiv()" onmouseout="abrirDiv()"><a href="../institucional/institucional.html" class="menu-link">Institucional</a>
+                  <div id="testeDiv">
+                    <ul>
+                      <a href="../institucional/sobre.html" class="menu-link2"><li>Sobre Nós</li></a>
+                      <a href="../institucional/fichas.html" class="menu-link2"><li>Equipe e Diretoria</li></a>
+                      <a href="../institucional/servicos.html" class="menu-link2"><li>Serviços</li></a>
+                    </ul>
+                  </div>
+                </li><br>
+                <li class="menu-item"><a href="../projetos/projetos.html" class="menu-link">Projetos</a></li><br>
+                <li class="menu-item"><a href="../colabore/colabore.html" class="menu-link">Colabore</a></li><br>
+                <li class="menu-item"><a href="../contatos/contatos.html" class="menu-link">Contato</a></li>
+              </ul>
+            </nav>    
+          </aside>
+          <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+          </div>
+        </div>
+      <!-------------------FIM DO HEADER------------------------->
+
+      <DIV  id="fale" onclick="abrirFale()"><a href="#fale2"><img src="../../imagens/bater-papo.png" alt="" style="width: 20px; margin-right: 3%; margin-bottom: -5%;">Bate-Papo</a></DIV>
+      <div id="fale2">
+        <div id="papo1">
+          <img src="../../imagens/logo.png" alt="">
+        </div>
+        <div id="papo2">
+          <h1>Converse com o Lar Betel - </h1>
+          <p>Olá! Como podemos te ajudar?</p>
+        </div>
+        
+        <div id="papo3"></div>
+
+        <div id="papo4">
+          <a href="https://www.facebook.com/messages/t/571127359574297" target="_blank">Iniciar bate-papo</a><p> 
+          <img src="../../imagens/messenger.png" alt="" style="width: 15px; margin-right: 2%;">Com tecnologia do Messenger</p>
+        </div>
+      </div>
+
+      <div class="div-sobrediv">
+        <!-- <div class="vai">
+                  <DIV id="vai1" onclick="abrirDiv1()"><a href="#testeDiv1" class="a">Serviços</a></DIV>
+                  <DIV id="vai2" onclick="abrirDiv2()"><a href="#testeDiv2" class="a">Recursos</a></DIV>
+        </div> -->
+        <div class="sobrediv60" id="sobre">
+            <div class="cor"></div>
+            <a href="#testeDiv1" class="a" onclick="abrirDiv1()" id="a1">Serviços</a>
+            <a href="#testeDiv2" class="a" onclick="abrirDiv2()" id="a2">Covid-19</a>
+          <h1 id="tituloServiço">Serviços</h1>
+        </div>
+         
+        <div class="sobrediv2"  id="testeDiv1">
+          <div id="conteudo1ser">
+            <div id="faixa1Conteudo">
+                <h1>Serviços</h1>
+            </div><br>
+            <div id="faixa2Conteudo">
+                <p>Procuramos sempre atender nossos residentes da melhor forma possivel, desde uma estádia confortavel, ambientes agradáveis <br>e serviços profissionais que cuidam dos idosos como uma familia.</p>
+            </div>
+        </div>
+        
+        <div id="conteudo2ser">
+            <div id="tituloConteudo2">Serviços Técnicos</div>
+            <div id="faixaConteudo2">
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/medico2.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Médicos</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/nurse.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Enfermeiros</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/enfermeiro.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Psicóloga</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/nutritionist.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Nutricionista</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="faixaConteudo2">
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/social-care.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Assistente <br> Social</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/fisioterapeuta2.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Fisioterapeuta</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/recreador.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Recreador</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/enfermeira2.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Enfermagem <br> 24 horas</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="conteudo3ser">
+            <div id="faixaConteudo3_pt1">
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/food.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Seis refeições <br>por dia</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/gum.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Tratamento <br> dentário</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/treadmill.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Ginástica <br> laboral</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/fashion.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Roupas lavadas <br> e passadas</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="faixaConteudo3_pt2">
+                <h1>Serviços Essenciais<br>Extras</h1>
+                </div>
+            </div>
+        
+            <div id="conteudo3ser">
+                <div id="faixaConteudo3_pt2" class="left">
+                    <h1>Serviços Direcionados<br>a Lazer</h1>
+            </div>
+            <div id="faixaConteudo3_pt1">
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/haircut.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Cortes de <br> cabelo</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/manicure.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Manicure</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/people.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Coral</h3>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div id="logo">
+                        <img src="../../imagens/park.png">
+                    </div>
+                    <div id="titulo">
+                        <h3>Lazer</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+          </div>
+
+          <div class="sobrediv2"  id="testeDiv4">
+            <div id="conteudo1ser">
+                <div id="faixa1Conteudo">
+                    <h1>Serviços</h1>
+                </div><br>
+                <div id="faixa2Conteudo">
+                    <p>Procuramos sempre atender nossos residentes da melhor forma possivel, desde uma estádia confortavel, ambientes agradáveis <br>e serviços profissionais que cuidam dos idosos como uma familia.</p>
+                </div>
+            </div>
+            
+            <div id="conteudo2ser">
+                <div id="tituloConteudo2">Serviços Técnicos</div>
+                <div id="faixaConteudo2">
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/medico2.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Médicos</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/nurse.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Enfermeiros</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/enfermeiro.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Psicóloga</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/nutritionist.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Nutricionista</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="faixaConteudo2">
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/social-care.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Assistente <br> Social</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/fisioterapeuta2.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Fisioterapeuta</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/recreador.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Recreador</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/enfermeira2.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Enfermagem <br> 24 horas</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="conteudo3ser">
+                <div id="faixaConteudo3_pt1">
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/food.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Seis refeições <br>por dia</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/gum.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Tratamento <br> dentário</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/treadmill.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Ginástica <br> laboral</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/fashion.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Roupas lavadas <br> e passadas</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="faixaConteudo3_pt2">
+                    <h1>Serviços Essenciais<br>Extras</h1>
+                </div>
+            </div>
+        
+            <div id="conteudo3ser">
+                <div id="faixaConteudo3_pt2" class="left">
+                    <h1>Serviços Direcionados<br>a Lazer</h1>
+                </div>
+                <div id="faixaConteudo3_pt1">
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/haircut.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Cortes de <br> cabelo</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/manicure.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Manicure</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/people.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Coral</h3>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div id="logo">
+                            <img src="../../imagens/park.png">
+                        </div>
+                        <div id="titulo">
+                            <h3>Lazer</h3>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+              </div>
+
+          <div class="sobrediv3" id="testeDiv2">
+            <div id="espaco1"></div><br>
+            <h1>CORONAVÍRUS</h1><br>
+            <p>Nossa nota sobre a pandemia da Covid-19.</p><br>
+            <center><img src="../../imagens/covid.png" alt="" class="img2"></center>
+            <div id="espaco"></div>
+          </div>
+
+          
+ 
+
+
+        </div>
+        
+    <!--------NÃO MEXER-------->
+    <footer>
+      <div class="boxs">
+        <img src="../../imagens/logo1.png" alt="">
+      </div>
+      
+      <div class="boxs">
+        <h2 class="boxs2">Saiba mais</h2>
+        <ul>
+          <li><a href="sobre.html"  id="boxs22">Sobre nós</a></li>
+          <li><a href="servicos.html"  id="boxs22">Serviços</a></li>
+          <li><a href="../colabore/colabore.html"  id="boxs22">Colabore</a></li>
+          <!-- <a href="../colabore/colabore.html" class="doar2">DOAR</a> -->
+        </ul>
+      </div>
+
+      <div class="boxs">
+        <h2 class="boxs1">Contatos</h2>
+        <ul>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <li id="boxs11">Rua Santos Dumont, 377 <br> Piracicaba - SP</a></li>
+        </ul>
+        <ul>
+          <li id="boxs11">(19) 3418-2020</a></li>
+          <li id="boxs11">contato@larbetel.org.br</a></li>
+          <li id="boxs11">Seg à Dom - 11h às 18h</a></li>
+          
+        </ul>
+        
+        <div class="sociais">
+          <div class="social">
+            <a href="https://www.instagram.com/larbetelpira/?fbclid=IwAR1U3f6YUrQvIbbxp6GnQoFRDgFRMLGQmvoGRJb3iZLFVg_bj7k1Q1kL-Y0" target="_blank"><img src="../../imagens/instagram.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/larbetelpiracicaba/" target="_blank"><img src="../../imagens/facebook.png" alt=""style="width: 30px;"></a>
+          </div>
+          <div class="social">
+            <a href="https://twitter.com/larbetelpira/with_replies" target="_blank"><img src="../../imagens/twitter.png" alt="" style="width: 30px;"></a>
+          </div>
+      </div>
+   
+   </footer>
+ <div class="footer">
+    <a href="../adm/Ctrl/login.php" style="margin-top: 0.6%" target="_blank"><p>Copyright ©1953– 2022</p></a>
+   </div> 
+
+  
+      
+
+   <script src="../../css/paraTodos/script.js"></script>
+</html>

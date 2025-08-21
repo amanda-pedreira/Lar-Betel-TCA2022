@@ -1,0 +1,313 @@
+
+
+<!--TODOS AS ESTILIZAÇÕES DO HEADER, FOOTER E DO BATE PAPO, assim como o java script deles, ESTÃO NO SEGUINTE CAMINHO: dentro da pasta "css", então dentro de "paraTodos", e em "sript.js" e "style.css"-->
+<!--fora essas estilizações, qualquer uma está dentro da pasta css e arquivo css com mesmo nome do arquivo html (ex: em contatos esta: pasta css, contatos, contatos.css)-->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/paraTodos/style.css" />
+    <link rel="stylesheet" href="../../css/institucional/sobre.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="../../imagens/android-icon-192x192.png" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Lar Betel</title>
+  </head>
+  <body>
+    <!-------------------COMEÇO DO HEADER------------------------->
+    <div class="container" id="conteudo">
+
+
+      <div class="header" id="headerr">
+
+        <div class="header-1">
+          <a href="../colabore/colabore.html" class="doar">Doar</a>
+        </div>
+
+          <div class="header-2">
+          <a href="../../index.html"><img src="../../imagens/logo (2).png" alt="" class="header-img"></a>
+        </div>
+      
+        <div class="header-3">
+        <div class="hamburguer">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+          
+        </div> 
+        <aside class="sidebar">
+          <nav>
+            <ul class="menu">
+              <li class="menu-item"><a href="../../index.html" class="menu-link">Inicio</a></li>
+              <br>
+              <li class="menu-item" onmouseover="abrirDiv()" onmouseout="abrirDiv()"><a href="../institucional/institucional.html" class="menu-link">Institucional</a>
+                <div id="testeDiv">
+                  <ul>
+                    <a href="../institucional/sobre.html" class="menu-link2"><li>Sobre Nós</li></a>
+                    <a href="../institucional/fichas.html" class="menu-link2"><li>Equipe e Diretoria</li></a>
+                    <a href="../institucional/servicos.html" class="menu-link2"><li>Serviços</li></a>
+                  </ul>
+                </div>
+              </li>
+              <br>
+              <li class="menu-item"><a href="../projetos/projetos.html" class="menu-link">Projetos</a></li>
+              <br>
+              <li class="menu-item"><a href="../colabore/colabore.html" class="menu-link">Colabore</a></li>
+              <br>
+              <li class="menu-item"><a href="../contatos/contatos.html" class="menu-link">Contato</a></li>
+            </ul>
+          </nav>    
+        </aside>
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        </div>
+      </div>
+    <!-------------------FIM DO HEADER------------------------->
+
+
+    <!-------------------COMEÇO DO BATE-PAPO------------------------->
+    <DIV  id="fale" onclick="abrirFale()"><a href="#fale2"><img src="../../imagens/bater-papo.png" alt="" style="width: 20px; margin-right: 3%; margin-bottom: -5%;">Bate-Papo</a></DIV>
+      <div id="fale2">
+        <div id="papo1">
+          <img src="../../imagens/logo.png" alt="">
+        </div>
+        <div id="papo2">
+          <h1>Converse com o Lar Betel - </h1>
+          <p>Olá! Como podemos te ajudar?</p>
+        </div>
+        
+        <div id="papo3"></div>
+
+        <div id="papo4">
+          <a href="https://www.facebook.com/messages/t/571127359574297" target="_blank">Iniciar bate-papo</a><p> 
+          <img src="../../imagens/messenger.png" alt="" style="width: 15px; margin-right: 2%;">Com tecnologia do Messenger</p>
+        </div>
+      </div>
+    <!-------------------FIM DO BATE-PAPO------------------------->
+
+    <!-------------------COMEÇO DO CONTEUDO------------------------->
+      <div class="div-sobrediv">
+
+
+    <!-------------------COMEÇO DO MENUZINHO------------------------->
+        <!-- <div class="vai">
+                <DIV id="vai1" onclick="abrirDiv1()"><a href="#testeDiv1" class="a">Sobre</a></DIV>
+                <DIV id="vai2" onclick="abrirDiv2()"><a href="#testeDiv2" class="a">História</a></DIV>
+                <DIV id="vai1" onclick="abrirDiv3()"><a href="#testeDiv3" class="a">Unidades e Estruturas</a></DIV>
+        </div> -->
+    <!-------------------FIM DO MENUZINHO------------------------>
+
+
+    <!-------------------COMEÇO DO HEADER-TITULO------------------------->
+        <div class="sobrediv60" id="sobre">
+          <div class="cor"></div>
+            <a href="#testeDiv1" class="a" onclick="abrirDiv1()" id="a1">Sobre</a>
+            <a href="#testeDiv2" class="a" onclick="abrirDiv2()" id="a2">História</a>
+            <a href="#testeDiv3" class="a" onclick="abrirDiv3()" id="a3">Estrutura</a>
+          <h1 id="tituloSobre">Sobre</h1>
+        </div>
+    <!-------------------FIM DO HEADER-TITULO------------------------->
+
+         <br><br>
+        <div class="sobrediv2"  id="testeDiv1">
+          
+          <div class="imagemlb">
+            <img class="lbimage" src="../../imagens/sobre/lar-betel-img.jpg">
+          </div>
+     
+          <div class="textoSobre">
+            <h1>Sobre</h1>
+            <h2>________</h2>
+            <p class="um">Há vários anos de dedicação, carinho e respeito! Conseguimos fazer do Lar Betel um lugar de gente feliz!</p>
+          <br>
+          <p class="dois">Tudo aqui foi pensado e desenvolvido para que os moradores se sintam em casa. Por isso, o O Lar Betel tem capacidade para atender 100 idosos, que recebem 6 refeições por dia, roupas lavadas e passadas. Têm assistência constante de nutricionista, fisioterapeuta, assistente social, psicóloga, enfermeira, técnicos e auxiliares de enfermagem 24 horas, cuidadores, manicure e cabeleireiro.  Nosso atendimento é personalizado de acordo com as necessidades e preferências pessoais de cada morador. </p>
+          <br>
+          <p class="tres">A Instituição tem como finalidade auxiliar pessoas idosas reconhecidamente necessitadas, a partir dos 60 anos, sem distinção de cor, raça ou crença religiosa, amparando-as moralmente em regime integral. Além de alojamento, roupas e alimentação, oferece assistência nos campos de lazer, saúde e cultura, contribuindo assim para a melhoria das condições de reintegração social e qualidade de vida do idoso acolhido.</p>
+        </div>
+          </div>
+
+
+          <div class="sobrediv2"  id="testeDiv4"><br><br>
+
+            <div class="imagemlb">
+              <img class="lbimage" src="../../imagens/sobre/lar-betel-img.jpg">
+            </div>
+       
+            <div class="textoSobre">
+              <h1>Sobre</h1>
+              <h2>________</h2>
+              <p class="um">Há vários anos de dedicação, carinho e respeito! Conseguimos fazer do Lar Betel um lugar de gente feliz!</p>
+            <br>
+            <p class="dois">Tudo aqui foi pensado e desenvolvido para que os moradores se sintam em casa. Por isso, o O Lar Betel tem capacidade para atender 100 idosos, que recebem 6 refeições por dia, roupas lavadas e passadas. Têm assistência constante de nutricionista, fisioterapeuta, assistente social, psicóloga, enfermeira, técnicos e auxiliares de enfermagem 24 horas, cuidadores, manicure e cabeleireiro.  Nosso atendimento é personalizado de acordo com as necessidades e preferências pessoais de cada morador. </p>
+            <br>
+            <p class="tres">A Instituição tem como finalidade auxiliar pessoas idosas reconhecidamente necessitadas, a partir dos 60 anos, sem distinção de cor, raça ou crença religiosa, amparando-as moralmente em regime integral. Além de alojamento, roupas e alimentação, oferece assistência nos campos de lazer, saúde e cultura, contribuindo assim para a melhoria das condições de reintegração social e qualidade de vida do idoso acolhido.</p>
+          </div>
+        </div>
+
+          <div class="sobrediv3" id="testeDiv2">
+            <div class="umaimg"></div>
+            <div class="tudo3">
+            <br><br><h1>HISTÓRIA</h1><br>
+            <br>
+            <br>
+            <p class="tres">O “Lar Betel” cujo significado é “Casa de Deus” teve início com um dedicado grupo de senhoras que se reunia no porão da Igreja Metodista Central de Piracicaba e costurava para os pobres, utilizando apenas materiais obtidos através de doações. Surgiu assim, na década de 40, a inspiração de Dona Branca Leite Marcondes de fundar dentro da sociedade uma instituição que se denominaria “Serviço de Assistência Social Betel”, com a finalidade de construir pequenas casas para dar abrigo às famílias que já vinham sendo atendidas, mediante pagamento de aluguéis. Em 21 de Novembro de 1953 foi apresentado e aprovado o respectivo estatuto e eleita a primeira diretoria. Com a eleição da primeira diretoria, iniciou-se uma intensa campanha de grupo, no sentido de construir um asilo para velhos desamparados nos terrenos recebidos por doações.
+            </p> <br>
+            <p class="quatro">De início, o Lar Betel era constituído por duas alas. A primeira ala possuía 8 casas para pequenas famílias e a segunda era constituída em blocos, contendo dois salões coletivos, cozinha, refeitório, banheiros e escritório.
+
+            </p> <br>
+            <p class="cinco">Atualmente, a Associação de Assistência Social Betel – “Lar Betel” é uma entidade sem fins econômicos, que atende atualmente cerca de 90 idosos residentes. </p>
+            <br>
+              
+              <p>Quer saber mais sobre a nossa fundadora? <a href="#criadora"> <span class="cor">Saiba Mais...</span></a></p>
+            </div>
+
+
+            
+          <div class="criadora" id="criadora">
+            <div class="testCr">
+              <h3>Nossa Criadora</h3>
+              <br>
+              <p>
+                Dona Branca Marcondes nasceu nesta cidade no dia 27 de janeiro de 1885. Em 1904 diplomou-se Professora Primária, na antiga Escola Complementar, à Rua do Rosário. Em 1907 iniciou sua longa dedicada jornada como professora primária na cidade de Mineiros, onde veio a casar-se com Augusto Marcondes Cesar.
+              </p><br>
+              <p>
+                Como disse o Apóstolo Tiago: “A fé sem obras é morta”. Assim foi que Dona Branca com inabalável fé e com a colaboração de quatro militantes da Sociedade Metodista de Senhoras e alguns homens da Igreja Metodista Central pôde, em 1953, fundar o “LAR BETEL” desta cidade. Instituição Evangélica que até hoje vem cumprindo sua missão de amor ao próximo, amparando carinhosamente os irmãos mais idosos, cujas vidas se findam vazias, solitárias, muitas vezes, sem a gratidão daqueles que no passado souberam usufruir e beneficiar-se de suas existências, até então, úteis e devotadas, que precisam integralmente do nosso amor e apoio humanitário.
+              </p>
+            </div>
+            <div id="img-fund">
+              <img class="cr" src="../../imagens/fundadora.jpg" width="290px" height="auto">
+            </div>
+          </div>
+
+          </div>
+
+          <div class="sobrediv4" id="testeDiv3">
+              <div class="div-total">
+                <div id="titulo">
+                  <h1>Nossa Estrutura</h1>
+                </div>
+                <div class="conteudo1">
+                  <div id="cont1">
+                    <div id="card1">
+                      <img id="imgg" src="../../imagens/cama.png" alt=""><br>
+                    <h1>Acomodação<br> -quartos-</h1>
+                    <p>As acomodações são distribuídas em quartos individuais, quartos duplos, compartilhados  e quartos coletivos.
+                    </p>
+                  </div>
+                  </div>
+                  <div id="cont2">
+                    <div id="card1">
+                      <img id="imgg" src="../../imagens/lazer.png" alt=""><br>
+                      <h1>Espaço de <br> lazer</h1>
+                      <p>Espaços para o idoso se conectar com a natureza, descansar e se entreter.  </p>
+                    </div>
+                  </div>
+                  <div id="cont3">
+                    <div id="card3">
+                      <img id="imgg" src="../../imagens/saude.png" alt=""><br>
+                      <h1>Requisitos para <br> saúde</h1>
+                      <p>Espaços modelados seguindo cuidados devidos para o idoso.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="conteudo2">
+                  <div id="cont4">
+                    <div id="card4">
+                      <img id="imgg"src="../../imagens/cultura.png" alt=""><br>
+                      <h1>Inclusão cultural</h1>
+                      <p>Buscamos mostrar coisas culturais dentro de nosso espaço</p>
+                    </div>
+                  </div>
+                  <div id="cont5">
+                    <div id="card5">
+                      <img id="imgg" src="../../imagens/prato.png" alt=""><br>
+                      <h1>Espaço para <br>   refeições</h1>
+                      <p>Espaço bem ambientado para a refeição do morador.</p>
+                    </div>
+                  </div>
+                  <div id="cont6">
+                    <div id="card6">
+                      <img id="imgg" src="../../imagens/casa.png" alt=""><br>
+                      <h1>Alojamento</h1>
+                      <p>Ambiente com estrutura agradavel e favoravel para o idoso.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+ 
+
+        </div>
+
+    <!-------------------COMEÇO DO CONTEUDO------------------------->
+
+
+  <!--------NÃO MEXER-------->
+  <footer>
+    <div class="boxs">
+      <img src="../../imagens/logo1.png" alt="">
+    </div>
+    
+
+    <div class="boxs">
+      <h2 class="boxs2">Saiba mais</h2>
+      <ul>
+        <li><a href="sobre.html"  id="boxs22">Sobre nós</a></li>
+        <li><a href="servicos.html"  id="boxs22">Serviços</a></li>
+        <li><a href="../colabore/colabore.html"  id="boxs22">Colabore</a></li>
+        <!-- <a href="../colabore/colabore.html" class="doar2">DOAR</a> -->
+      </ul>
+    </div>
+
+
+    <div class="boxs">
+      <h2 class="boxs1">Contatos</h2>
+      <ul>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <li id="boxs11">Rua Santos Dumont, 377 <br> Piracicaba - SP</a></li>
+      </ul>
+      <ul>
+        <li id="boxs11">(19) 3418-2020</a></li>
+        <li id="boxs11">contato@larbetel.org.br</a></li>
+        <li id="boxs11">Seg à Dom - 11h às 18h</a></li>
+        
+      </ul>
+      
+      <div class="sociais">
+        <div class="social">
+          <a href="https://www.instagram.com/larbetelpira/?fbclid=IwAR1U3f6YUrQvIbbxp6GnQoFRDgFRMLGQmvoGRJb3iZLFVg_bj7k1Q1kL-Y0" target="_blank"><img src="../../imagens/instagram.png" alt=""style="width: 30px;"></a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/larbetelpiracicaba/" target="_blank"><img src="../../imagens/facebook.png" alt=""style="width: 30px;"></a>
+        </div>
+        <div class="social">
+          <a href="https://twitter.com/larbetelpira/with_replies" target="_blank"><img src="../../imagens/twitter.png" alt="" style="width: 30px;"></a>
+        </div>
+    </div>
+ 
+ </footer>
+
+ <div class="footer">
+  <a href="../adm/Ctrl/login.php" target="_blank"><p>Copyright ©1953– 2022</p></a>
+ </div> 
+
+
+    
+
+ <script src="../../css/paraTodos/script.js"></script>
+ <script src="../../css/institucional/script.js"></script>
+
+</html>
