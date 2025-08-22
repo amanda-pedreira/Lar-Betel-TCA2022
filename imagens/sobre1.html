@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Lar Betel</title>
+    <script>
+      function abrirDiv(){
+        var Aparecendo = document.getElementById("testeDiv").style.display;
+
+        if(Aparecendo == "block"){
+          document.getElementById("testeDiv").style.display ="none";
+        }else{
+          document.getElementById("testeDiv").style.display ="block";
+        }
+        
+      }
+    </script>
+    
+  </head>
+  <body>
+
+    <div class="container">
+
+        <div class="hamburguer">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+          
+        </div>  
+        
+        <aside class="sidebar">
+          <nav>
+            <ul class="menu">
+              <li class="menu-item"><a href="index.html" class="menu-link" >Inicio</a></li>
+              <li class="menu-item"><a href="#conhecimentos" class="menu-link">Doe aqui</a></li>
+              <li class="menu-item" onclick="abrirDiv()">
+                <a href="#" class="menu-link">Projetos</a>
+                <div id="testeDiv">
+                  <ul>
+                    <li>teste 1</li>
+                    <li>teste 2</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+              <li class="menu-item"><a href="sobre.html" class="menu-link">Sobre nós</a></li>
+            </ul>
+          </nav>
+       
+        </aside>
+
+        <br>
+        <div class="sobrediv" id="sobre">
+          <img src="imagens/foto_entrada-min.jpg" alt="">
+          <h1>SOBRE NÓS</h1>
+        </div>
+        <div class="sobrediv2" id="sobre">
+          <h1>NOSSA HISTÓRIA</h1><br>
+          <p class="um">O “Lar Betel” cujo significado é “Casa de Deus” teve início com um dedicado grupo de senhoras que se reunia no porão da Igreja Metodista Central de Piracicaba e costurava para os pobres, utilizando apenas materiais obtidos através de doações. Surgiu assim, na década de 40, a inspiração de Dona Branca Leite Marcondes de fundar dentro da sociedade uma instituição que se denominaria “Serviço de Assistência Social Betel”, com a finalidade de construir pequenas casas para dar abrigo às famílias que já vinham sendo atendidas, mediante pagamento de aluguéis. Em 21 de Novembro de 1953 foi apresentado e aprovado o respectivo estatuto e eleita a primeira diretoria. Com a eleição da primeira diretoria, iniciou-se uma intensa campanha de grupo, no sentido de construir um asilo para idosos desamparados nos terrenos recebidos por doações.</p>
+          <br>
+          <p class="dois">De início, o Lar Betel era constituído por duas alas. A primeira ala possuía 8 casas para pequenas famílias e a segunda era constituída em blocos, contendo dois salões coletivos, cozinha, refeitório, banheiros e escritório. Atualmente, a Associação de Assistência Social Betel – “Lar Betel” é uma entidade sem fins econômicos, que atende atualmente cerca de 90 idosos residentes. </p>
+          <br>
+          <p class="tres">A Instituição tem como finalidade auxiliar pessoas idosas reconhecidamente necessitadas, a partir dos 60 anos, sem distinção de cor, raça ou crença religiosa, amparando-as moralmente em regime integral. Além de alojamento, roupas e alimentação, oferece assistência nos campos de lazer, saúde e cultura, contribuindo assim para a melhoria das condições de reintegração social e qualidade de vida do idoso acolhido. <br> Os residentes recebem na entidade 06 refeições por dia e atendimento de médicos, enfermeiros, nutricionista, fisioterapeuta, recreador, assistente social e psicóloga, além de enfermagem 24 horas. Conta também com voluntários que contribuem com manicure, pedicure, cortes de cabelo, tratamento dentário, ginástica laboral, entre outros serviços. As acomodações são distribuídas em quartos individuais, quartos duplos, compartilhados (03 pessoas) e quartos coletivos (até 06 pessoas).</p>
+        </div>
+       
+    
+        
+
+
+
+      <!--------NÃO MEXER-------->
+       <footer>
+          <div class="boxs">
+            <h2></h2>
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+          <div class="boxs">
+            <h2>Inicio</h2>
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Projetos</a></li>
+            </ul>
+          </div>
+
+          <div class="boxs">
+            <h2>Contatos</h2>
+            <ul>
+              <li><a href="#">(19) 3418-2020</a></li>
+              <li><a href="#">contato@larbetel.org.br</a></li>
+            </ul>
+          </div>
+          
+          <div class="boxs">
+            <h2>Localização</h2>
+            <ul>
+              <li><a href="#">Rua Santos Dumont, 377 <br> Piracicaba - SP
+              </a></li>
+            </ul>
+          </div>
+       </footer>
+
+       <div class="footer">
+        <h2>Logo</h2>
+        <div class="sociais">
+          <div class="social">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
+       </div>
+
+        
+        <script src="script.js"></script>
+</html>
