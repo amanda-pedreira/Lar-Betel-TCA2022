@@ -7,11 +7,13 @@ Nossa equipe decidiu trabalhar com o site de um **Lar de Idosos**, com a ideia d
 
 ---
 ## 📌 O que foi feito
-- **Paleta de cores** mais harmoniosa e acolhedora  
-- Estrutura de navegação clara e objetiva  
-- Páginas com informações sobre o lar, contato e atividades bem estruturados
-
-
+-  **Paleta de cores** mais harmoniosa e acolhedora, criando uma identidade visual agradável.  
+-  **Estrutura de navegação clara e objetiva**, facilitando que os usuários encontrem informações rapidamente.  
+-  **Páginas com informações sobre o lar, contato e atividades bem organizadas**, tornando o conteúdo mais acessível.  
+-  **Textos revisados** para melhorar compreensão e legibilidade.   
+-  **Interatividade básica** com elementos clicáveis, menus e botões, tornando a experiência mais dinâmica.  
+-  **Organização de conteúdo**, separando claramente seções como história do lar, missão, serviços e eventos.  
+-  **Prática de lógica e boas práticas** de HTML, CSS e JavaScript, aplicando conceitos aprendidos no primeiro ano.  
 
 ---
 
