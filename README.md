@@ -12,6 +12,9 @@ Nossa equipe decidiu trabalhar com o site de um **Lar de Idosos**, com a ideia d
 - Páginas com informações sobre o lar, contato e atividades bem estruturados
 
 
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 Na época, estávamos no início da nossa jornada e conhecíamos apenas o **básico**. Por isso, o projeto foi feito na “mão”, praticando ao máximo o que havíamos aprendido no primeiro ano ✍️:  
 
