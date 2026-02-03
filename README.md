@@ -1,4 +1,4 @@
-# Projeto TCA — Site Institucional para Lar de Idosos
+# 📄 Projeto TCA — Site Institucional para Lar de Idosos
 
 Projeto desenvolvido como parte do **TCA (Trabalho de Conclusão de Ano)** no **1º ano do curso Técnico em Informática para Internet (ETEC)** em 2022.
 
